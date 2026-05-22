@@ -153,13 +153,31 @@ data/embeddings/
 
 Do not require pgvector for the first implementation.
 
-## Phase 8: Experiment Runner
+## Phase 8A: Experiment Logging and DB Foundation
+
+Implement:
+
+- `src/lib/prisma.ts`
+- `src/types/experiment.ts`
+- `src/lib/experiment/logResult.ts`
+
+Requirements:
+
+- Centralize Prisma client creation.
+- Create experiment run records.
+- Mark experiment runs as running, completed, or failed.
+- Log one generated assistant response per experiment result.
+- Store RAG retrieved context as JSON.
+- Store Prompt Engineering retrieved context as null.
+- Support offline validation without OpenAI calls.
+- Provide an optional DB smoke test for local manual testing.
+
+## Phase 8B: Experiment Runner Orchestration
 
 Implement:
 
 - `src/lib/experiment/runExperiment.ts`
 - `src/lib/experiment/runScenario.ts`
-- `src/lib/experiment/logResult.ts`
 
 Requirements:
 
