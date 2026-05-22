@@ -58,8 +58,8 @@ model ExperimentResult {
   technique            Technique
   kbSize               Int
   latencyMs            Int?
-  promptTokens         Int?
-  completionTokens     Int?
+  inputTokens          Int?
+  outputTokens         Int?
   totalTokens          Int?
   retrievedContextJson Json?
   error                String?
