@@ -62,6 +62,8 @@ Do not duplicate or paraphrase entries just to increase KB size. The 100-entry a
 - `service`
 - `product`
 
+`duration` should be a string for services and may be `null` for products that do not have an appointment or procedure duration.
+
 ## Policy Item
 
 ```json

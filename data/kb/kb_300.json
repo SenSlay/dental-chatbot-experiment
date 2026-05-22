@@ -1,0 +1,2061 @@
+{
+  "faqs": [
+    {
+      "id": "faq_001",
+      "question": "Do you accept walk-in patients?",
+      "answer": "Yes, we accept walk-in patients. However, patients with prior appointments are prioritized. We recommend booking in advance to minimize your waiting time."
+    },
+    {
+      "id": "faq_002",
+      "question": "What are your clinic hours?",
+      "answer": "Our clinic is open Monday to Saturday, 9:00 AM to 6:00 PM. We are closed on Sundays and public holidays."
+    },
+    {
+      "id": "faq_003",
+      "question": "How do I book an appointment?",
+      "answer": "You can book an appointment by calling our clinic, messaging us on Facebook or Viber, or using the online booking form on our website. Please have your name, contact number, preferred date and time, and the service you need ready."
+    },
+    {
+      "id": "faq_004",
+      "question": "Do you accept HMO or health insurance?",
+      "answer": "Yes, we accept select HMO providers. Please contact us in advance to confirm if your HMO card is accredited with our clinic and to verify which services are covered."
+    },
+    {
+      "id": "faq_005",
+      "question": "What payment methods do you accept?",
+      "answer": "We accept cash, GCash, Maya, and major credit or debit cards. Installment options may be available for select major treatments."
+    },
+    {
+      "id": "faq_006",
+      "question": "How do I reschedule my appointment?",
+      "answer": "To reschedule, please contact us at least 24 hours before your scheduled appointment via phone or message. This allows us to offer your slot to another patient in need."
+    },
+    {
+      "id": "faq_007",
+      "question": "Is in-clinic teeth whitening safe?",
+      "answer": "Yes, in-clinic teeth whitening is safe when performed by a licensed dentist. Some patients may experience mild tooth sensitivity afterward, which typically resolves within 24 to 48 hours."
+    },
+    {
+      "id": "faq_008",
+      "question": "How long does an oral prophylaxis take?",
+      "answer": "A standard oral prophylaxis, or professional dental cleaning, typically takes 45 minutes to an hour. This may vary depending on the amount of tartar buildup and your overall oral condition."
+    },
+    {
+      "id": "faq_009",
+      "question": "What should I do in a dental emergency?",
+      "answer": "For dental emergencies such as severe toothache, a knocked-out tooth, or facial swelling, please call our clinic immediately. We accommodate emergency cases on a priority basis during clinic hours."
+    },
+    {
+      "id": "faq_010",
+      "question": "Do you treat child patients?",
+      "answer": "Yes, we welcome pediatric patients. A parent or legal guardian must be present throughout the consultation and procedure for patients under 18 years of age."
+    },
+    {
+      "id": "faq_011",
+      "question": "How far in advance should I book for braces?",
+      "answer": "We recommend booking your orthodontic consultation at least one to two weeks in advance. Brace fitting appointments may require additional lead time depending on the orthodontist's schedule. Contact us to check available slots."
+    },
+    {
+      "id": "faq_012",
+      "question": "What should I avoid eating before a tooth extraction?",
+      "answer": "If local anesthesia will be used, you may eat a light meal about two hours before your appointment. Avoid eating a heavy meal right before the procedure. If sedation is involved, your dentist will instruct you to fast for a specified number of hours."
+    },
+    {
+      "id": "faq_013",
+      "question": "What should I avoid after a tooth extraction?",
+      "answer": "After extraction, avoid rinsing forcefully, drinking through a straw, smoking, and eating hard or hot foods for at least 24 hours. These actions can dislodge the blood clot and delay healing. Eat soft foods and take prescribed medications as directed."
+    },
+    {
+      "id": "faq_014",
+      "question": "Are dental implants painful?",
+      "answer": "The implant placement procedure is done under local anesthesia, so you should not feel pain during the surgery. Mild soreness and swelling may occur for a few days after the procedure, which can be managed with prescribed pain relievers."
+    },
+    {
+      "id": "faq_015",
+      "question": "How often should I visit the dentist?",
+      "answer": "We recommend visiting the dentist at least every six months for a routine check-up and oral prophylaxis. Patients with ongoing treatments such as braces or periodontal conditions may need more frequent visits as directed by their dentist."
+    },
+    {
+      "id": "faq_016",
+      "question": "Do you offer installment payment plans?",
+      "answer": "Yes, installment payment options are available for major procedures such as braces, implants, and full-mouth restorations. Terms and availability depend on the total cost and are arranged directly with our billing coordinator. Please inquire at the front desk for details."
+    },
+    {
+      "id": "faq_017",
+      "question": "Can I use my PhilHealth benefit for dental services?",
+      "answer": "PhilHealth coverage for dental services is generally limited. Basic extractions may be covered under specific benefit packages. We recommend checking directly with PhilHealth or your HMO provider to confirm what is covered before your appointment."
+    },
+    {
+      "id": "faq_018",
+      "question": "How long do composite fillings last?",
+      "answer": "Composite resin fillings typically last five to seven years with proper oral hygiene and regular dental check-ups. Their longevity depends on the size of the filling, the location of the tooth, and the patient's eating habits and oral care routine."
+    },
+    {
+      "id": "faq_019",
+      "question": "What is the difference between a dental crown and a veneer?",
+      "answer": "A dental crown covers the entire tooth to restore its shape, strength, and function, making it suitable for badly damaged or root canal-treated teeth."
+    },
+    {
+      "id": "faq_020",
+      "question": "Do you offer a senior citizen discount?",
+      "answer": "Yes, we offer a 20% discount on applicable services for senior citizens, in compliance with the Expanded Senior Citizens Act. Please present a valid senior citizen ID at the front desk before payment."
+    },
+    {
+      "id": "faq_021",
+      "question": "Can pregnant women undergo dental treatment?",
+      "answer": "Yes, many routine dental procedures are safe during pregnancy. The second trimester is generally considered the safest period for non-emergency dental work. Please inform our staff and your dentist of your pregnancy so they can adjust your care plan accordingly and avoid unnecessary x-rays."
+    },
+    {
+      "id": "faq_022",
+      "question": "How will I know if I need a root canal?",
+      "answer": "Common signs that may indicate the need for a root canal include persistent toothache, prolonged sensitivity to hot or cold, tooth discoloration, swollen or tender gums near a tooth, and a pimple-like bump on the gums. A dental examination and x-ray are needed to confirm the diagnosis."
+    },
+    {
+      "id": "faq_023",
+      "question": "What happens if I miss a braces adjustment appointment?",
+      "answer": "Missing adjustment appointments can slow down your orthodontic treatment progress and may require adjustments to your treatment timeline. Please contact us as soon as possible to reschedule a missed braces visit."
+    },
+    {
+      "id": "faq_024",
+      "question": "Where is your clinic located?",
+      "answer": "Our main clinic is located at 145 Sampaguita Street, Barangay Central, Quezon City, Metro Manila, Philippines. Exact address and map directions are available on our website and Facebook page. You may also call or message us for assistance with directions."
+    },
+    {
+      "id": "faq_025",
+      "question": "Is parking available at the clinic?",
+      "answer": "Limited street parking is available near the clinic. We recommend arriving a few minutes early to allow time for parking, especially during peak hours on weekdays."
+    },
+    {
+      "id": "faq_026",
+      "question": "How long does orthodontic treatment with braces take?",
+      "answer": "The average duration of braces treatment ranges from 18 to 24 months. However, the timeline varies based on the severity of the misalignment, patient compliance with wearing rubber bands or other accessories, and attendance at scheduled adjustment appointments."
+    },
+    {
+      "id": "faq_027",
+      "question": "Can I eat normally with removable dentures?",
+      "answer": "Most patients can eat a normal diet after adjusting to their dentures, which typically takes a few weeks. Initially, we recommend starting with soft foods and cutting food into small pieces. Some hard or sticky foods may still be difficult regardless of how well the denture fits."
+    },
+    {
+      "id": "faq_028",
+      "question": "What is oral prophylaxis and how is it different from brushing at home?",
+      "answer": "Oral prophylaxis is a professional dental cleaning performed by a dentist or dental hygienist using specialized instruments to remove hardened tartar deposits that cannot be removed by regular brushing and flossing."
+    },
+    {
+      "id": "faq_029",
+      "question": "Is teeth whitening a permanent treatment?",
+      "answer": "Teeth whitening is not permanent. Results can last from several months to a couple of years depending on your diet, oral hygiene, and lifestyle habits such as coffee, tea, or tobacco use. Touch-up treatments or at-home whitening kits can help maintain your results."
+    },
+    {
+      "id": "faq_030",
+      "question": "Can braces correct an overbite or underbite?",
+      "answer": "Yes, braces are commonly used to correct bite problems including overbite, underbite, crossbite, and open bite. In more severe cases, orthodontic treatment may be combined with other dental or surgical procedures. A consultation with our orthodontist is recommended for a proper assessment."
+    },
+    {
+      "id": "faq_031",
+      "question": "What is the minimum age for getting braces?",
+      "answer": "Braces can typically be placed once most of the permanent teeth have erupted, which is usually around 11 to 13 years of age. Early orthodontic evaluation is recommended around age 7 to detect potential issues. Adults can also get braces at any age."
+    },
+    {
+      "id": "faq_032",
+      "question": "How do I take care of my teeth after whitening?",
+      "answer": "After teeth whitening, avoid staining foods and beverages such as coffee, tea, red wine, and dark sodas for at least 48 hours. Maintain good brushing and flossing habits, and use a whitening toothpaste as recommended by your dentist to help prolong your results."
+    },
+    {
+      "id": "faq_033",
+      "question": "What is a dental crown used for?",
+      "answer": "A dental crown is used to cover and protect a tooth that is cracked, severely decayed, worn down, or has undergone a root canal. It restores the tooth's original shape, size, and function and can also improve its appearance."
+    },
+    {
+      "id": "faq_034",
+      "question": "Is a root canal procedure painful?",
+      "answer": "Root canal treatment is performed under local anesthesia, so the procedure itself should be painless. Patients may experience mild soreness or sensitivity in the treated area for a few days afterward."
+    },
+    {
+      "id": "faq_035",
+      "question": "Can I have multiple dental procedures done in one visit?",
+      "answer": "In some cases, multiple procedures can be combined in one visit depending on the complexity of each treatment, the patient's health condition, and available time. Your dentist will assess and advise whether combining procedures is appropriate during your consultation."
+    },
+    {
+      "id": "faq_036",
+      "question": "What is the difference between a dental implant and a denture?",
+      "answer": "A dental implant is a permanent replacement surgically anchored into the jawbone, closely mimicking a natural tooth in look, feel, and function. A denture is a removable appliance that rests on the gums."
+    },
+    {
+      "id": "faq_037",
+      "question": "How long do dental implants last?",
+      "answer": "With proper care and regular dental check-ups, dental implants can last 15 years or more, and many last a lifetime. The crown on top of the implant may need replacement after 10 to 15 years due to normal wear."
+    },
+    {
+      "id": "faq_038",
+      "question": "Am I a good candidate for dental implants?",
+      "answer": "Good candidates for dental implants are generally in good overall health, have sufficient jawbone density to support the implant, and do not have uncontrolled systemic conditions such as unmanaged diabetes. Smokers and patients with significant bone loss may require additional evaluation."
+    },
+    {
+      "id": "faq_039",
+      "question": "What is a surgical extraction?",
+      "answer": "A surgical extraction is a more complex procedure used to remove a tooth that cannot be extracted with forceps alone, such as an impacted wisdom tooth or a tooth broken at the gum line."
+    },
+    {
+      "id": "faq_040",
+      "question": "How do I clean my removable dentures?",
+      "answer": "Remove your dentures after eating and rinse them under running water. Brush them daily with a soft denture brush and non-abrasive denture cleaner. Soak them overnight in a denture cleaning solution or water. Never use regular toothpaste, as it can scratch the denture surface."
+    },
+    {
+      "id": "faq_041",
+      "question": "What should I do if my denture breaks?",
+      "answer": "Do not attempt to repair the denture yourself with household adhesives. Bring the broken pieces to our clinic as soon as possible. Our team will assess whether a repair is possible or if a new denture is needed. Most denture repairs can be completed within 24 to 48 hours."
+    },
+    {
+      "id": "faq_042",
+      "question": "How long do I need to wear my retainer after braces?",
+      "answer": "We typically recommend wearing your retainer full-time for the first six months after braces removal, then transitioning to nighttime wear only. Many patients are advised to continue wearing retainers indefinitely at night to maintain results long-term."
+    },
+    {
+      "id": "faq_043",
+      "question": "What should I do if a braces wire breaks or is poking my cheek?",
+      "answer": "Use orthodontic wax to cover the sharp end temporarily for comfort. Contact our clinic as soon as possible to schedule a repair visit. Do not attempt to cut the wire yourself unless it is causing significant injury and you are unable to reach the clinic."
+    },
+    {
+      "id": "faq_044",
+      "question": "What foods should I avoid with braces?",
+      "answer": "Avoid hard, crunchy, and sticky foods that can break brackets or bend wires, such as hard candies, ice, popcorn, nuts, chewing gum, and sticky sweets like caramel. Cut hard fruits and raw vegetables into small bite-sized pieces before eating."
+    },
+    {
+      "id": "faq_045",
+      "question": "Who is a good candidate for dental veneers?",
+      "answer": "Veneers are ideal for patients with discolored, chipped, slightly misaligned, or irregularly shaped front teeth who want an aesthetic improvement without extensive dental work. Patients must have healthy teeth and gums."
+    },
+    {
+      "id": "faq_046",
+      "question": "How do I know if my gums are healthy?",
+      "answer": "Healthy gums are firm, pale pink in color, and do not bleed when brushed or flossed. Signs of unhealthy gums include redness, swelling, bleeding, tenderness, persistent bad breath, and gums that appear to be pulling away from the teeth."
+    },
+    {
+      "id": "faq_047",
+      "question": "What is periodontal disease?",
+      "answer": "Periodontal disease, also known as gum disease, is an infection of the tissues that hold your teeth in place. It begins with gingivitis, which causes red and bleeding gums, and can progress to periodontitis, where the bone and fibers supporting the teeth are destroyed."
+    },
+    {
+      "id": "faq_048",
+      "question": "Can gum disease be treated?",
+      "answer": "Yes, gum disease can be treated effectively, especially when caught early. Treatment ranges from professional deep cleaning and scaling and root planing for mild to moderate cases to surgical intervention for advanced periodontitis."
+    },
+    {
+      "id": "faq_049",
+      "question": "What is a nightguard and who needs one?",
+      "answer": "A nightguard is a custom-fitted dental appliance worn during sleep to protect the teeth from the effects of bruxism, which is involuntary grinding or clenching of the teeth. It is recommended for patients who experience worn teeth, jaw pain, headaches, or are diagnosed with bruxism by their dentist."
+    },
+    {
+      "id": "faq_050",
+      "question": "Can I whiten my teeth if I have dental fillings, crowns, or veneers?",
+      "answer": "Teeth whitening only works on natural tooth enamel and will not change the color of existing dental restorations such as fillings, crowns, or veneers. If whitening is performed before getting restorations, new materials can be shade-matched to the whitened teeth."
+    },
+    {
+      "id": "faq_051",
+      "question": "What is the difference between a PFM crown and a zirconia crown?",
+      "answer": "A PFM (porcelain-fused-to-metal) crown has a metal inner structure with a porcelain outer layer. It is durable but the metal may show as a dark line at the gumline over time."
+    },
+    {
+      "id": "faq_052",
+      "question": "How do I prepare for a root canal appointment?",
+      "answer": "You can eat normally before a root canal unless your dentist advises otherwise. Ensure you get adequate rest the night before. Take any prescribed antibiotics or anti-inflammatory medications before the appointment if instructed."
+    },
+    {
+      "id": "faq_053",
+      "question": "Can children get dental sealants?",
+      "answer": "Yes, dental sealants are most commonly applied to children and teenagers as a preventive measure. They are typically placed on the permanent molars soon after they erupt, usually between ages 6 and 12, to protect the deep grooves of the back teeth from cavity-causing bacteria."
+    },
+    {
+      "id": "faq_054",
+      "question": "What is the purpose of a space maintainer for children?",
+      "answer": "A space maintainer is a dental appliance used when a child loses a baby tooth too early, before the permanent tooth is ready to emerge. It holds the space open so that neighboring teeth do not shift and crowd out the incoming permanent tooth."
+    },
+    {
+      "id": "faq_055",
+      "question": "What is a temporary filling and when is it used?",
+      "answer": "A temporary filling is a short-term restoration placed over a tooth that is sensitive, needs monitoring, or is being prepared for a more permanent treatment such as a root canal or crown. It provides immediate relief and protection while the long-term plan is finalized."
+    },
+    {
+      "id": "faq_056",
+      "question": "Is it safe to have dental x-rays taken?",
+      "answer": "Yes, dental x-rays are considered safe. The radiation dose from modern digital dental x-rays is very low, comparable to the background radiation received during a short airplane flight. Protective lead aprons are used during x-ray procedures as an added precaution."
+    },
+    {
+      "id": "faq_057",
+      "question": "What is a bitewing x-ray and when is it needed?",
+      "answer": "A bitewing x-ray shows the upper and lower back teeth in one image and is primarily used to detect cavities between teeth and to monitor the bone level between teeth. It is commonly taken during routine check-ups, typically once a year for most patients."
+    },
+    {
+      "id": "faq_058",
+      "question": "What is a panoramic x-ray and when is it needed?",
+      "answer": "A panoramic x-ray captures a full view of the teeth, jaws, sinuses, and joints in a single image. It is commonly used for orthodontic treatment planning, assessing wisdom teeth, evaluating implant sites, and detecting jaw abnormalities."
+    },
+    {
+      "id": "faq_059",
+      "question": "How long does a dental crown last?",
+      "answer": "Dental crowns typically last 10 to 15 years or longer with good oral hygiene and regular dental visits. Their lifespan depends on the material used, how well they are maintained, and habits such as grinding or eating hard foods. Zirconia and porcelain-fused crowns generally have good longevity."
+    },
+    {
+      "id": "faq_060",
+      "question": "What is the difference between oral prophylaxis and scaling and root planing?",
+      "answer": "Oral prophylaxis is a routine professional cleaning that removes plaque and tartar above and slightly below the gumline and is appropriate for patients with healthy gums."
+    },
+    {
+      "id": "faq_061",
+      "question": "What materials are dental veneers made from?",
+      "answer": "Dental veneers are made from either porcelain or composite resin. Porcelain veneers are fabricated in a dental laboratory and are more durable and stain-resistant but require two visits and slight tooth preparation."
+    },
+    {
+      "id": "faq_062",
+      "question": "Are clear aligners as effective as traditional braces?",
+      "answer": "Clear aligners are highly effective for mild to moderate tooth misalignment and spacing issues. For more complex bite corrections, traditional braces may still be more effective and precise."
+    },
+    {
+      "id": "faq_063",
+      "question": "What are ceramic braces and how do they differ from metal braces?",
+      "answer": "Ceramic braces work the same way as metal braces but use tooth-colored or clear ceramic brackets that are less noticeable. They are more aesthetic but slightly more expensive and may stain with certain foods and drinks if not maintained properly."
+    },
+    {
+      "id": "faq_064",
+      "question": "Do veneers damage the natural teeth underneath?",
+      "answer": "Porcelain veneers require a small and irreversible removal of enamel from the front surface of the tooth to ensure proper fit and appearance. Composite veneers require minimal to no tooth preparation. Once enamel is removed for porcelain veneers, the tooth will always require a restoration."
+    },
+    {
+      "id": "faq_065",
+      "question": "Can I drink coffee or tea with braces?",
+      "answer": "You can drink coffee or tea with braces, but do so in moderation. These beverages can stain the elastic ties around the brackets and, over time, may contribute to staining on the teeth around the brackets."
+    },
+    {
+      "id": "faq_066",
+      "question": "What is the step-by-step process for getting a dental crown?",
+      "answer": "The crown process typically involves two visits. During the first visit, the tooth is prepared by removing a layer of enamel, an impression is taken, and a temporary crown is placed. The impression is sent to a dental lab where the permanent crown is fabricated."
+    },
+    {
+      "id": "faq_067",
+      "question": "What aftercare is needed for a new dental filling?",
+      "answer": "Avoid eating on the filled side for at least one hour after placement to allow the material to fully set. Expect minor sensitivity to hot, cold, or pressure for a few days. Maintain regular brushing and flossing."
+    },
+    {
+      "id": "faq_068",
+      "question": "Can wisdom tooth extraction be done in a single visit?",
+      "answer": "Simple or partially erupted wisdom tooth extractions can often be completed in one visit. For fully impacted wisdom teeth requiring surgical extraction, the procedure is usually done per tooth or per side of the mouth, depending on the complexity and the patient's comfort level."
+    },
+    {
+      "id": "faq_069",
+      "question": "How long does it take to recover from a tooth extraction?",
+      "answer": "Initial healing of the gum tissue after a simple extraction typically takes one to two weeks. For surgical extractions such as wisdom tooth removal, soft tissue healing may take two to three weeks. Full bone healing in the socket takes several months."
+    },
+    {
+      "id": "faq_070",
+      "question": "Do you offer sedation for dental procedures?",
+      "answer": "We use local anesthesia for all procedures that require pain management. For anxious patients or complex surgical cases, your dentist may refer you to a facility that offers IV sedation or general anesthesia. Please discuss your anxiety or medical concerns with your dentist during the consultation."
+    },
+    {
+      "id": "faq_071",
+      "question": "What is oral prophylaxis with fluoride?",
+      "answer": "This is a combination service where a professional dental cleaning is followed by the application of a topical fluoride treatment to strengthen enamel and prevent decay. It is especially recommended for cavity-prone patients and children during routine visits."
+    },
+    {
+      "id": "faq_072",
+      "question": "Can patients with sensitive teeth undergo teeth whitening?",
+      "answer": "Patients with tooth sensitivity can undergo whitening but should inform the dentist beforehand. The dentist may recommend a lower-concentration gel, shorter application time, or a desensitizing treatment before or after whitening. Take-home kits with gentler formulas are also an alternative option."
+    },
+    {
+      "id": "faq_073",
+      "question": "What is composite bonding?",
+      "answer": "Composite bonding is a cosmetic procedure where tooth-colored resin is applied and shaped onto a tooth to repair chips, close small gaps, improve discoloration, or alter tooth shape. It is a minimally invasive and cost-effective option that can usually be completed in one visit."
+    },
+    {
+      "id": "faq_074",
+      "question": "How do I know if my child needs braces?",
+      "answer": "Signs that your child may benefit from orthodontic treatment include crowded or overlapping teeth, a visibly protruding upper or lower jaw, difficulty chewing or biting, mouth breathing, and early or late loss of baby teeth."
+    },
+    {
+      "id": "faq_075",
+      "question": "What is a fixed dental bridge made of?",
+      "answer": "A dental bridge can be made from several materials including porcelain fused to metal, all-ceramic or all-porcelain, and zirconia. The choice of material depends on the location in the mouth, functional demands, and the patient's aesthetic preferences."
+    },
+    {
+      "id": "faq_076",
+      "question": "What happens if I do not replace a missing tooth?",
+      "answer": "Leaving a missing tooth unreplaced can lead to neighboring teeth shifting into the gap, bone loss in the jaw at the extraction site, changes in bite alignment, difficulty chewing, and altered facial appearance over time. Early replacement with a bridge, implant, or partial denture prevents these."
+    },
+    {
+      "id": "faq_077",
+      "question": "What should I do if my dental crown falls off?",
+      "answer": "Keep the crown and contact our clinic as soon as possible to have it re-cemented. Avoid eating on the affected side. If the tooth is sensitive without the crown, you can apply a small amount of dental cement or sugar-free denture adhesive available at pharmacies to temporarily protect the tooth."
+    },
+    {
+      "id": "faq_078",
+      "question": "What is the recovery timeline after dental implant surgery?",
+      "answer": "After implant placement, expect mild swelling and discomfort for two to five days. Soft foods are recommended for one to two weeks. The osseointegration process, where the implant fuses with the bone, takes three to six months before the final crown can be placed."
+    },
+    {
+      "id": "faq_079",
+      "question": "Can I get dental implants if I have bone loss in my jaw?",
+      "answer": "Yes, in many cases bone grafting can be performed before or during implant placement to rebuild the bone structure needed to support the implant. A CBCT scan or panoramic x-ray is used to assess the extent of bone loss and determine whether grafting is necessary."
+    },
+    {
+      "id": "faq_080",
+      "question": "What is the difference between an amalgam and a composite filling?",
+      "answer": "Amalgam fillings are made from a silver-colored metal alloy and are highly durable and long-lasting. They are more visible and less commonly used today. Composite fillings are tooth-colored and blend naturally with the tooth."
+    },
+    {
+      "id": "faq_081",
+      "question": "What is a pulp cap procedure and when is it done?",
+      "answer": "A pulp cap is a procedure where a medicated material is placed directly over exposed or nearly exposed dental pulp to protect it and encourage healing."
+    },
+    {
+      "id": "faq_082",
+      "question": "How do I take care of my dental implant?",
+      "answer": "Care for a dental implant similarly to a natural tooth. Brush twice daily, floss around the implant using implant-specific floss or an interdental brush, and visit the clinic for regular professional cleanings. Avoid using the implant to bite on hard objects."
+    },
+    {
+      "id": "faq_083",
+      "question": "What is an apicoectomy?",
+      "answer": "An apicoectomy is a minor surgical procedure performed when an infection at the root tip of a tooth persists after a root canal treatment. The tip of the root is removed along with infected tissue, and the end of the root canal is sealed."
+    },
+    {
+      "id": "faq_084",
+      "question": "Do you offer teeth gem application?",
+      "answer": "Yes, we offer cosmetic teeth gem application using dental-safe adhesive material. The gems are bonded to the enamel surface and do not damage the tooth. The procedure is quick and reversible. Please inquire with our cosmetic dentist for available gem styles and pricing."
+    },
+    {
+      "id": "faq_085",
+      "question": "Is it safe to have dental procedures done while taking blood thinners?",
+      "answer": "Patients on blood-thinning medications such as aspirin, warfarin, or clopidogrel should inform their dentist before any procedure involving bleeding, such as extractions or surgery. Your dentist may coordinate with your physician regarding temporary adjustment of medication."
+    },
+    {
+      "id": "faq_086",
+      "question": "Do you offer sports mouthguards?",
+      "answer": "Yes, we offer custom-fitted sports mouthguards made from durable dental material to protect the teeth during contact sports and physical activities. Custom mouthguards offer significantly better protection and comfort compared to over-the-counter boil-and-bite alternatives."
+    },
+    {
+      "id": "faq_087",
+      "question": "What is scaling and root planing?",
+      "answer": "Scaling and root planing is a non-surgical deep cleaning procedure for patients diagnosed with gum disease."
+    },
+    {
+      "id": "faq_088",
+      "question": "How can I prevent cavities in my child?",
+      "answer": "Prevent cavities by establishing a regular brushing routine with fluoride toothpaste from the time the first tooth appears. Limit sugary foods and drinks, especially before bedtime. Schedule dental check-ups every six months."
+    },
+    {
+      "id": "faq_089",
+      "question": "What is the recovery process after wisdom tooth surgery?",
+      "answer": "After wisdom tooth surgery, apply cold compress to the face for the first 24 hours to reduce swelling. Rest and avoid strenuous activity for two to three days. Eat only soft foods and drink plenty of fluids. Take all prescribed medications as directed."
+    },
+    {
+      "id": "faq_090",
+      "question": "What is the difference between a complete and a partial denture?",
+      "answer": "A complete denture replaces all of the teeth in the upper or lower jaw and rests entirely on the gum tissue. A partial denture is used when some natural teeth remain and is anchored to them using metal clasps or precision attachments. Both are removable and custom-fabricated for each patient."
+    },
+    {
+      "id": "faq_091",
+      "question": "How do I care for my orthodontic retainer?",
+      "answer": "Remove your retainer before eating or drinking anything other than water. Rinse it with lukewarm water after removal and clean it daily with a soft toothbrush and mild soap or retainer cleaning solution. Store it in its case when not in use."
+    },
+    {
+      "id": "faq_092",
+      "question": "Do you have a patient loyalty or rewards program?",
+      "answer": "Yes, we have a patient loyalty program for returning patients. Details on points accumulation and rewards are available at the front desk. Long-term patients may also be eligible for referral discounts when they refer new patients to the clinic."
+    },
+    {
+      "id": "faq_093",
+      "question": "Do you accommodate patients with dental anxiety?",
+      "answer": "Yes, we welcome patients who experience dental anxiety. Our dentists are trained to work patiently with anxious patients. You can inform our staff when booking so they can prepare accordingly, schedule you with a dentist known for a calming approach, and allow extra time for your visit."
+    },
+    {
+      "id": "faq_094",
+      "question": "How should I brush my teeth while wearing braces?",
+      "answer": "Use a soft-bristled toothbrush and hold it at a 45-degree angle to the gumline. Brush gently above and below each bracket and along the gumline. Use an interdental brush to clean between brackets and under wires. Brush after every meal if possible, and at minimum twice a day."
+    },
+    {
+      "id": "faq_095",
+      "question": "Can a broken denture be repaired?",
+      "answer": "Yes, most broken or cracked dentures can be repaired at the clinic or sent to our dental laboratory. The repair time varies based on the extent of damage. Bring all broken pieces with you, even small ones, as they may be needed for the repair."
+    },
+    {
+      "id": "faq_096",
+      "question": "What is a dental inlay or onlay?",
+      "answer": "A dental inlay is a custom-made filling fabricated in a laboratory that fits within the cusps of a back tooth. An onlay extends over one or more cusps of the tooth. Both are more conservative than a full crown and more durable than a direct filling."
+    },
+    {
+      "id": "faq_097",
+      "question": "Do you offer same-day appointments?",
+      "answer": "Same-day appointments are available based on slot availability and are prioritized for emergency and urgent cases. For routine and elective services, we recommend booking in advance to secure your preferred schedule. Contact us early in the morning to check if a slot is open for the same day."
+    },
+    {
+      "id": "faq_098",
+      "question": "What should I bring to my first dental visit?",
+      "answer": "Please bring a valid government-issued ID, your HMO card or insurance documents if applicable, a list of any medications you are currently taking, and any previous dental records or x-rays you may have. New patients are asked to arrive a few minutes early to complete an intake form."
+    },
+    {
+      "id": "faq_099",
+      "question": "How long does a composite veneer last?",
+      "answer": "Composite veneers typically last four to seven years depending on oral hygiene practices, diet, and habits such as nail biting or teeth grinding. They can be polished and repaired relatively easily compared to porcelain veneers. Regular dental check-ups help monitor their condition."
+    },
+    {
+      "id": "faq_100",
+      "question": "What is the difference between getting a dental implant versus a bridge to replace a missing tooth?",
+      "answer": "A dental implant is a standalone replacement that integrates into the jawbone without affecting neighboring teeth, preserves bone, and is highly durable. A bridge requires crowning the teeth adjacent to the gap to support the false tooth in between and does not preserve jawbone."
+    }
+  ],
+  "offerings": [
+    {
+      "id": "offering_001",
+      "offeringType": "service",
+      "name": "Oral Prophylaxis",
+      "price": "PHP 800 - PHP 1,200",
+      "description": "Professional dental cleaning to remove plaque, tartar, and surface stains. Includes polishing for a cleaner and smoother tooth surface. Recommended every six months.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_002",
+      "offeringType": "service",
+      "name": "Simple Tooth Extraction",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "Removal of a fully erupted tooth using dental forceps under local anesthesia. Recommended for severely decayed, damaged, or mobile teeth.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_003",
+      "offeringType": "service",
+      "name": "Composite Resin Filling",
+      "price": "PHP 1,500 - PHP 2,500 per tooth",
+      "description": "Tooth-colored filling material used to restore cavities or minor tooth fractures. Matches the natural shade of the tooth for an aesthetic and functional result.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_004",
+      "offeringType": "service",
+      "name": "Traditional Metal Braces",
+      "price": "PHP 35,000 - PHP 55,000",
+      "description": "Fixed orthodontic appliance using metal brackets and archwires to correct tooth misalignment and bite problems. Includes monthly adjustment visits throughout the treatment.",
+      "duration": "18 - 24 months"
+    },
+    {
+      "id": "offering_005",
+      "offeringType": "service",
+      "name": "In-Clinic Teeth Whitening",
+      "price": "PHP 5,000 - PHP 8,000",
+      "description": "Professional bleaching treatment performed in the dental chair using a high-concentration whitening gel and light activation for immediate and noticeable results.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_006",
+      "offeringType": "service",
+      "name": "Porcelain Dental Crown",
+      "price": "PHP 8,000 - PHP 15,000 per unit",
+      "description": "A custom-fitted tooth-shaped cap placed over a damaged or root canal-treated tooth to restore its shape, strength, and appearance. Porcelain crowns blend naturally with surrounding teeth.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_007",
+      "offeringType": "service",
+      "name": "Root Canal Treatment",
+      "price": "PHP 5,000 - PHP 10,000 per tooth",
+      "description": "Procedure to remove infected or inflamed pulp tissue from inside the tooth, disinfect the root canals, and seal them to prevent reinfection. Preserves the natural tooth and relieves pain.",
+      "duration": "2 - 3 visits"
+    },
+    {
+      "id": "offering_008",
+      "offeringType": "service",
+      "name": "Dental Implant",
+      "price": "PHP 50,000 - PHP 80,000 per tooth",
+      "description": "A titanium screw surgically placed into the jawbone to serve as an artificial tooth root. Topped with an implant crown for a stable, natural-looking, and long-lasting tooth replacement.",
+      "duration": "3 - 6 months including osseointegration period"
+    },
+    {
+      "id": "offering_009",
+      "offeringType": "service",
+      "name": "Complete Removable Denture",
+      "price": "PHP 15,000 - PHP 25,000 per arch",
+      "description": "A full set of removable artificial teeth for patients who have lost all natural teeth in the upper or lower jaw. Custom-fabricated for a comfortable fit and functional bite.",
+      "duration": "Multiple visits over 3 - 4 weeks"
+    },
+    {
+      "id": "offering_010",
+      "offeringType": "service",
+      "name": "Dental Consultation",
+      "price": "PHP 300 - PHP 500",
+      "description": "Initial or follow-up visit with the dentist for oral examination, diagnosis, and treatment planning. The dentist will assess your dental concerns and recommend appropriate treatment.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_011",
+      "offeringType": "service",
+      "name": "Periapical X-Ray",
+      "price": "PHP 150 - PHP 300 per film",
+      "description": "A dental radiograph showing the full length of one or more teeth from crown to root tip. Used to detect infections, bone loss, root abnormalities, and cysts.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_012",
+      "offeringType": "service",
+      "name": "Hawley Retainer",
+      "price": "PHP 3,000 - PHP 5,000 per arch",
+      "description": "A removable orthodontic retainer made from acrylic and a wire clasp, worn after braces removal to maintain tooth alignment. Custom-fabricated based on an impression of the patient's teeth.",
+      "duration": "Ready for pick-up within 5 - 7 working days after impression"
+    },
+    {
+      "id": "offering_013",
+      "offeringType": "service",
+      "name": "Panoramic X-Ray (OPG)",
+      "price": "PHP 800 - PHP 1,500",
+      "description": "A wide-view dental radiograph that captures all teeth, upper and lower jaws, sinuses, and temporomandibular joints in a single image. Commonly used for orthodontic planning, implant assessment, and wisdom tooth evaluation.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_014",
+      "offeringType": "service",
+      "name": "Dental Sealant",
+      "price": "PHP 500 - PHP 800 per tooth",
+      "description": "A thin protective resin coating applied to the chewing surfaces of back teeth to prevent cavity formation. Most commonly recommended for children and teenagers as a preventive measure.",
+      "duration": "15 - 20 minutes"
+    },
+    {
+      "id": "offering_015",
+      "offeringType": "service",
+      "name": "Fluoride Treatment",
+      "price": "PHP 500 - PHP 800",
+      "description": "A professional topical fluoride application to strengthen tooth enamel and reduce the risk of tooth decay. Applied as a gel, foam, or varnish after cleaning. Recommended for cavity-prone patients and children.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_016",
+      "offeringType": "service",
+      "name": "Surgical Tooth Extraction",
+      "price": "PHP 2,000 - PHP 5,000",
+      "description": "Removal of a tooth that is impacted, broken at the gum line, or cannot be extracted with forceps alone. Involves a small incision and may require sectioning of the tooth. Typically performed for impacted wisdom teeth.",
+      "duration": "45 - 90 minutes"
+    },
+    {
+      "id": "offering_017",
+      "offeringType": "service",
+      "name": "Removable Partial Denture (Acrylic)",
+      "price": "PHP 8,000 - PHP 18,000",
+      "description": "A removable dental appliance that replaces one or more missing teeth, supported by remaining natural teeth and gum tissue. Made from acrylic resin with metal clasps for retention.",
+      "duration": "Multiple visits over 2 - 3 weeks"
+    },
+    {
+      "id": "offering_018",
+      "offeringType": "service",
+      "name": "Ceramic (Tooth-Colored) Braces",
+      "price": "PHP 45,000 - PHP 65,000",
+      "description": "Fixed orthodontic appliance similar to metal braces but using clear or tooth-colored ceramic brackets that are less visible. A popular choice for patients who want a more discreet orthodontic option.",
+      "duration": "18 - 24 months"
+    },
+    {
+      "id": "offering_019",
+      "offeringType": "service",
+      "name": "Clear Aligners",
+      "price": "PHP 80,000 - PHP 150,000",
+      "description": "A series of custom-made removable clear plastic trays that gradually move teeth into proper alignment. Each set of trays is worn for one to two weeks. Preferred by patients seeking a nearly invisible orthodontic solution.",
+      "duration": "12 - 24 months"
+    },
+    {
+      "id": "offering_020",
+      "offeringType": "service",
+      "name": "Porcelain Veneer",
+      "price": "PHP 8,000 - PHP 15,000 per tooth",
+      "description": "Ultra-thin porcelain shells custom-fabricated and bonded to the front surface of teeth to improve their color, shape, and overall appearance. Ideal for discolored, chipped, or slightly misaligned front teeth.",
+      "duration": "2 visits approximately 1 to 2 weeks apart"
+    },
+    {
+      "id": "offering_021",
+      "offeringType": "service",
+      "name": "Composite Veneer",
+      "price": "PHP 3,000 - PHP 5,000 per tooth",
+      "description": "A tooth-colored resin applied and sculpted directly onto the tooth surface to correct minor aesthetic imperfections. A more affordable alternative to porcelain veneers and can be done in a single visit.",
+      "duration": "45 - 60 minutes per tooth"
+    },
+    {
+      "id": "offering_022",
+      "offeringType": "service",
+      "name": "Fixed Dental Bridge",
+      "price": "PHP 12,000 - PHP 25,000",
+      "description": "A prosthetic device that bridges the gap left by one or more missing teeth. Supported by crowns on adjacent teeth, a fixed bridge is permanently cemented and does not require removal.",
+      "duration": "2 - 3 visits over 1 to 2 weeks"
+    },
+    {
+      "id": "offering_023",
+      "offeringType": "service",
+      "name": "Space Maintainer (Pediatric)",
+      "price": "PHP 3,000 - PHP 5,000",
+      "description": "A dental appliance placed in the mouth of a child who has prematurely lost a baby tooth to hold the space open for the incoming permanent tooth. Prevents adjacent teeth from shifting into the gap.",
+      "duration": "Fitted in 1 - 2 visits"
+    },
+    {
+      "id": "offering_024",
+      "offeringType": "service",
+      "name": "Occlusal Nightguard",
+      "price": "PHP 4,000 - PHP 8,000",
+      "description": "A custom-made hard or soft acrylic mouthguard worn during sleep to protect teeth from the effects of bruxism (grinding and clenching). Reduces wear on tooth surfaces and relieves jaw muscle tension.",
+      "duration": "Ready for fitting within 1 week after impression"
+    },
+    {
+      "id": "offering_025",
+      "offeringType": "service",
+      "name": "Take-Home Teeth Whitening Kit",
+      "price": "PHP 2,500 - PHP 4,500",
+      "description": "A professional-grade bleaching kit with custom-fitted whitening trays and a lower-concentration whitening gel for gradual use at home. Results develop over one to two weeks of nightly use as directed.",
+      "duration": "Custom trays ready within 3 - 5 working days"
+    },
+    {
+      "id": "offering_026",
+      "offeringType": "service",
+      "name": "Scaling and Root Planing",
+      "price": "PHP 3,000 - PHP 6,000 per quadrant",
+      "description": "A deep cleaning procedure that removes plaque and tartar from below the gum line and smooths the root surfaces to promote gum reattachment. Used to treat gingivitis and early to moderate periodontitis.",
+      "duration": "60 - 90 minutes per session"
+    },
+    {
+      "id": "offering_027",
+      "offeringType": "service",
+      "name": "Zirconia Crown",
+      "price": "PHP 12,000 - PHP 20,000 per unit",
+      "description": "A high-strength all-ceramic dental crown made from zirconia oxide. Known for its excellent durability, tooth-colored appearance, and biocompatibility. Suitable for both front and back teeth.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_028",
+      "offeringType": "service",
+      "name": "Essix Clear Retainer",
+      "price": "PHP 2,500 - PHP 4,000 per arch",
+      "description": "A removable clear plastic retainer custom-molded to the patient's teeth, worn after orthodontic treatment to maintain alignment. Discreet and comfortable, ideal for patients who prefer a less visible retainer.",
+      "duration": "Ready for pick-up within 3 - 5 working days after impression"
+    },
+    {
+      "id": "offering_029",
+      "offeringType": "service",
+      "name": "Fixed Lingual Retainer",
+      "price": "PHP 3,500 - PHP 5,500 per arch",
+      "description": "A thin wire bonded to the back surfaces of the front teeth to maintain alignment after orthodontic treatment. Permanently in place and not visible, making it a low-maintenance retention option.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_030",
+      "offeringType": "service",
+      "name": "Temporary Sedative Filling",
+      "price": "PHP 500 - PHP 1,200",
+      "description": "A short-term filling placed over a sensitive or symptomatic tooth to relieve pain and protect the pulp while the tooth is being monitored or prepared for permanent treatment.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_031",
+      "offeringType": "service",
+      "name": "Pulp Capping",
+      "price": "PHP 1,500 - PHP 3,000",
+      "description": "A procedure to protect a dental pulp that is nearly or minimally exposed due to deep decay or trauma. A medicated material is placed over the pulp to encourage healing and avoid root canal treatment.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_032",
+      "offeringType": "service",
+      "name": "Stainless Steel Crown (Pediatric)",
+      "price": "PHP 2,500 - PHP 4,000 per tooth",
+      "description": "A prefabricated metal crown placed over a primary (baby) tooth that has undergone pulp treatment or is too damaged to be restored with a filling. Durable and effective for restoring function in children.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_033",
+      "offeringType": "service",
+      "name": "Bitewing X-Ray",
+      "price": "PHP 300 - PHP 500 per pair",
+      "description": "A type of dental radiograph that shows the upper and lower back teeth in one image, specifically used to detect cavities between teeth and bone level changes associated with gum disease.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_034",
+      "offeringType": "service",
+      "name": "Oral Cancer Screening",
+      "price": "PHP 300 - PHP 500",
+      "description": "A clinical examination of the lips, tongue, gums, cheeks, palate, and throat for signs of abnormal tissue that may indicate early oral cancer or precancerous conditions. Recommended annually for adults.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_035",
+      "offeringType": "service",
+      "name": "Porcelain-Fused-to-Metal (PFM) Crown",
+      "price": "PHP 6,000 - PHP 10,000 per unit",
+      "description": "A dental crown with a metal substructure for strength and a porcelain outer layer for a tooth-colored appearance. A widely used restoration option offering a balance of durability and aesthetics.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_036",
+      "offeringType": "service",
+      "name": "Orthodontic Consultation",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "An assessment visit with the orthodontist to evaluate the patient's teeth, bite, and jaw alignment. Includes a discussion of available treatment options such as metal braces, ceramic braces, or clear aligners, along with an estimated timeline and cost.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_037",
+      "offeringType": "product",
+      "name": "Sensitive Toothpaste",
+      "price": "PHP 180 - PHP 280",
+      "description": "Desensitizing toothpaste formulated for patients with tooth sensitivity to hot, cold, or sweet stimuli. Contains potassium nitrate or stannous fluoride to block pain signals over time.",
+      "duration": null
+    },
+    {
+      "id": "offering_038",
+      "offeringType": "product",
+      "name": "Orthodontic Wax",
+      "price": "PHP 80 - PHP 150",
+      "description": "Soft dental wax applied to braces brackets or wires to relieve irritation and sores on the inner cheeks and lips. Essential for new braces patients and during adjustments.",
+      "duration": null
+    },
+    {
+      "id": "offering_039",
+      "offeringType": "product",
+      "name": "Whitening Toothpaste",
+      "price": "PHP 150 - PHP 250",
+      "description": "A daily-use toothpaste with mild polishing agents to help remove surface stains and maintain whitening results. Not a substitute for professional whitening treatments.",
+      "duration": null
+    },
+    {
+      "id": "offering_040",
+      "offeringType": "product",
+      "name": "Interdental Brush Set",
+      "price": "PHP 120 - PHP 200",
+      "description": "Small cone or cylindrical-shaped brushes designed to clean between teeth and around dental appliances such as braces, bridges, and implants where regular floss cannot reach.",
+      "duration": null
+    },
+    {
+      "id": "offering_041",
+      "offeringType": "service",
+      "name": "Oral Prophylaxis with Fluoride",
+      "price": "PHP 1,200 - PHP 1,800",
+      "description": "A combined service offering professional dental cleaning followed immediately by a topical fluoride application. Ideal for patients who want preventive care in a single visit. Recommended for children and cavity-prone adults.",
+      "duration": "60 - 75 minutes"
+    },
+    {
+      "id": "offering_042",
+      "offeringType": "service",
+      "name": "Full-Mouth Periapical Series",
+      "price": "PHP 1,500 - PHP 2,500",
+      "description": "A complete set of periapical x-ray films covering all teeth in the mouth. Used for comprehensive dental evaluation, new patient records, or patients undergoing full-mouth rehabilitation.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_043",
+      "offeringType": "service",
+      "name": "CBCT Scan Referral and Interpretation",
+      "price": "PHP 3,500 - PHP 6,000",
+      "description": "Referral for a cone beam computed tomography (CBCT) three-dimensional scan of the jaw and teeth. Used for complex implant planning, jaw pathology evaluation, and surgical assessments. Includes interpretation by the treating dentist.",
+      "duration": "Scan completed at referral center; interpretation within 2 - 3 days"
+    },
+    {
+      "id": "offering_044",
+      "offeringType": "service",
+      "name": "Amalgam Filling",
+      "price": "PHP 800 - PHP 1,500 per tooth",
+      "description": "A silver-colored dental filling made from a durable metal alloy. Suitable for restoring back teeth with high bite forces. A cost-effective and long-lasting option, though less aesthetic than composite fillings.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_045",
+      "offeringType": "service",
+      "name": "Glass Ionomer Filling",
+      "price": "PHP 800 - PHP 1,500 per tooth",
+      "description": "A tooth-colored filling material that chemically bonds to the tooth and releases fluoride to help prevent further decay. Commonly used for cavities in areas not subject to heavy biting forces, and for primary teeth in children.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_046",
+      "offeringType": "service",
+      "name": "Porcelain Inlay",
+      "price": "PHP 6,000 - PHP 10,000 per tooth",
+      "description": "A laboratory-fabricated porcelain restoration that fits within the central portion of a prepared back tooth. More durable and precise than a direct filling, ideal for moderately damaged teeth that do not yet need a crown.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_047",
+      "offeringType": "service",
+      "name": "Porcelain Onlay",
+      "price": "PHP 8,000 - PHP 12,000 per tooth",
+      "description": "A custom laboratory-made porcelain restoration that covers one or more cusps of a back tooth in addition to filling the central cavity. Provides more coverage than an inlay while being more conservative than a full crown.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_048",
+      "offeringType": "service",
+      "name": "Post and Core Build-Up",
+      "price": "PHP 2,500 - PHP 4,500 per tooth",
+      "description": "A restorative procedure where a post is inserted into the root canal space after root canal treatment and a core of material is built up to support a dental crown. Necessary when a tooth lacks sufficient structure to retain a crown on its own.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_049",
+      "offeringType": "service",
+      "name": "Crown Lengthening",
+      "price": "PHP 5,000 - PHP 8,000 per tooth",
+      "description": "A surgical procedure that removes excess gum and bone tissue to expose more of the tooth structure. Performed before crown placement when there is insufficient tooth structure above the gumline or for cosmetic gum reshaping.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_050",
+      "offeringType": "service",
+      "name": "Gingival Contouring",
+      "price": "PHP 3,000 - PHP 6,000",
+      "description": "A cosmetic procedure that reshapes uneven or excessive gum tissue to create a more balanced and proportionate gumline. Often performed as part of a smile makeover. Can be done using a scalpel or laser depending on the technique used.",
+      "duration": "45 - 90 minutes"
+    },
+    {
+      "id": "offering_051",
+      "offeringType": "service",
+      "name": "Bone Grafting",
+      "price": "PHP 15,000 - PHP 30,000 per site",
+      "description": "A surgical procedure to rebuild lost or insufficient bone in the jaw, typically performed at an extraction site or before dental implant placement. Uses bone graft materials to stimulate new bone growth and restore adequate bone volume.",
+      "duration": "60 - 120 minutes per site"
+    },
+    {
+      "id": "offering_052",
+      "offeringType": "service",
+      "name": "Socket Preservation",
+      "price": "PHP 5,000 - PHP 10,000 per site",
+      "description": "A procedure performed at the time of tooth extraction where bone graft material is placed into the socket to minimize bone loss and preserve the ridge shape for future implant placement.",
+      "duration": "Performed during the extraction appointment"
+    },
+    {
+      "id": "offering_053",
+      "offeringType": "service",
+      "name": "Implant Crown",
+      "price": "PHP 15,000 - PHP 25,000 per unit",
+      "description": "The visible tooth-shaped crown that is attached to a dental implant after osseointegration is complete. Available in porcelain, zirconia, or PFM materials. Priced separately from the implant placement surgery.",
+      "duration": "2 visits"
+    },
+    {
+      "id": "offering_054",
+      "offeringType": "service",
+      "name": "Implant-Supported Partial Denture",
+      "price": "PHP 80,000 - PHP 150,000",
+      "description": "A removable or fixed partial denture anchored to two or more dental implants for enhanced stability. Suitable for patients missing several consecutive teeth who want a more secure alternative to a conventional partial denture.",
+      "duration": "Multiple visits over 3 - 6 months"
+    },
+    {
+      "id": "offering_055",
+      "offeringType": "service",
+      "name": "All-on-4 Implant Consultation",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "A detailed evaluation to determine candidacy for the All-on-4 treatment concept, which uses four strategically placed implants to support a full arch of fixed teeth. Includes review of bone volume, bite, and health history.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_056",
+      "offeringType": "service",
+      "name": "Denture Relining",
+      "price": "PHP 3,500 - PHP 6,000 per arch",
+      "description": "Refitting the inner surface of an existing denture to improve its fit against the gum tissue, which changes shape after tooth loss or weight changes. Recommended when dentures become loose or uncomfortable.",
+      "duration": "1 - 2 visits"
+    },
+    {
+      "id": "offering_057",
+      "offeringType": "service",
+      "name": "Denture Repair",
+      "price": "PHP 800 - PHP 2,500",
+      "description": "Repair of a cracked, broken, or chipped denture. Simple fractures may be repaired in-house while complex damage may require laboratory work. Bring all broken pieces to the appointment for the best repair outcome.",
+      "duration": "Same day to 48 hours depending on complexity"
+    },
+    {
+      "id": "offering_058",
+      "offeringType": "service",
+      "name": "Acrylic Temporary Crown",
+      "price": "PHP 1,000 - PHP 2,500 per unit",
+      "description": "A chair-side fabricated temporary crown placed to protect a prepared tooth while the permanent crown is being made in the laboratory. Worn for approximately one to two weeks.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_059",
+      "offeringType": "service",
+      "name": "Custom Bleaching Tray Fabrication",
+      "price": "PHP 1,500 - PHP 2,500",
+      "description": "Custom-made soft plastic trays designed to fit precisely over the patient's teeth for use with at-home whitening gels. Ensures even gel distribution and maximum whitening effectiveness.",
+      "duration": "Trays ready within 3 - 5 working days"
+    },
+    {
+      "id": "offering_060",
+      "offeringType": "service",
+      "name": "Periodontal Maintenance Visit",
+      "price": "PHP 1,500 - PHP 2,500",
+      "description": "A focused maintenance cleaning and examination for patients who have completed active gum disease treatment. Scheduled every three to four months to monitor gum health and prevent recurrence of periodontal disease.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_061",
+      "offeringType": "service",
+      "name": "Antibiotic Subgingival Irrigation",
+      "price": "PHP 500 - PHP 1,000 per quadrant",
+      "description": "Application of an antimicrobial or antibiotic solution into the periodontal pockets during or after deep cleaning to reduce bacterial load and support gum healing. Used as an adjunct to scaling and root planing.",
+      "duration": "Performed during the periodontal appointment"
+    },
+    {
+      "id": "offering_062",
+      "offeringType": "service",
+      "name": "Frenectomy",
+      "price": "PHP 3,000 - PHP 5,000",
+      "description": "A minor surgical procedure to remove or release a frenum, which is the tissue connecting the lip or tongue to the gums or floor of the mouth. Performed when the frenum causes restricted tongue movement, a gap between front teeth, or gum recession.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_063",
+      "offeringType": "service",
+      "name": "Operculectomy",
+      "price": "PHP 2,000 - PHP 3,500",
+      "description": "Surgical removal of the gum flap (operculum) overlying a partially erupted wisdom tooth that is repeatedly becoming infected or causing discomfort. A conservative alternative to full extraction when the tooth itself is otherwise healthy.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_064",
+      "offeringType": "service",
+      "name": "Dry Socket Treatment",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "Treatment for alveolar osteitis, a painful condition that occurs when the blood clot at an extraction site is dislodged or dissolves prematurely. Involves cleaning the socket and placing a medicated dressing to relieve pain and promote healing.",
+      "duration": "15 - 30 minutes"
+    },
+    {
+      "id": "offering_065",
+      "offeringType": "service",
+      "name": "Emergency Tooth Extraction",
+      "price": "PHP 1,000 - PHP 3,000",
+      "description": "Urgent removal of a severely painful, infected, or traumatized tooth during an emergency visit. Includes local anesthesia and basic post-extraction instructions. An emergency fee applies in addition to the extraction cost.",
+      "duration": "30 - 60 minutes"
+    },
+    {
+      "id": "offering_066",
+      "offeringType": "service",
+      "name": "Emergency Filling",
+      "price": "PHP 800 - PHP 1,500",
+      "description": "Placement of a temporary or permanent filling on an urgent basis for a tooth causing acute sensitivity or pain due to a broken restoration or newly exposed cavity. Emergency fee applies.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_067",
+      "offeringType": "service",
+      "name": "Suture Removal",
+      "price": "PHP 300 - PHP 500",
+      "description": "Removal of sutures placed following a surgical dental procedure such as tooth extraction, implant surgery, or soft tissue surgery. Typically scheduled 5 to 7 days after the procedure.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_068",
+      "offeringType": "service",
+      "name": "Dental Splinting",
+      "price": "PHP 3,000 - PHP 6,000",
+      "description": "A procedure that joins loose teeth together using a composite material or wire to stabilize them and prevent further mobility. Used for teeth loosened by trauma or advanced gum disease.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_069",
+      "offeringType": "service",
+      "name": "TMJ Occlusal Splint",
+      "price": "PHP 6,000 - PHP 10,000",
+      "description": "A rigid custom-made appliance worn to manage temporomandibular joint (TMJ) dysfunction, jaw pain, and clenching-related headaches. Repositions the jaw into a more comfortable resting position.",
+      "duration": "Delivery within 1 - 2 weeks after impressions"
+    },
+    {
+      "id": "offering_070",
+      "offeringType": "service",
+      "name": "Custom Sports Mouthguard",
+      "price": "PHP 2,500 - PHP 4,500",
+      "description": "A custom-fitted protective mouthguard fabricated from impression of the patient's teeth. Provides superior protection against dental injuries during contact sports compared to over-the-counter alternatives.",
+      "duration": "Ready for delivery within 3 - 5 working days"
+    },
+    {
+      "id": "offering_071",
+      "offeringType": "service",
+      "name": "Anti-Snoring Mouthpiece",
+      "price": "PHP 8,000 - PHP 15,000",
+      "description": "A custom dental appliance that repositions the lower jaw and tongue during sleep to reduce snoring and mild obstructive sleep apnea. Custom-fitted for maximum comfort and effectiveness.",
+      "duration": "Delivery within 1 - 2 weeks after consultation"
+    },
+    {
+      "id": "offering_072",
+      "offeringType": "service",
+      "name": "Teeth Gem Application",
+      "price": "PHP 500 - PHP 1,500 per gem",
+      "description": "A cosmetic dental gem bonded to the surface of a tooth using dental adhesive. Available in various shapes and crystals. The procedure is quick and does not damage the enamel. Reversible upon request.",
+      "duration": "15 - 20 minutes"
+    },
+    {
+      "id": "offering_073",
+      "offeringType": "service",
+      "name": "Smile Makeover Consultation",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "A comprehensive planning session with our cosmetic dentist to design a personalized smile transformation. Includes assessment of tooth shape, color, gum line, and proportions, with a proposed combination of treatments to achieve the desired aesthetic outcome.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_074",
+      "offeringType": "service",
+      "name": "Full Mouth Rehabilitation Consultation",
+      "price": "PHP 800 - PHP 1,500",
+      "description": "A detailed evaluation for patients requiring extensive restorative work across multiple teeth. The dentist assesses bite, jaw function, existing restorations, and overall oral health to develop a comprehensive long-term treatment plan.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_075",
+      "offeringType": "service",
+      "name": "Digital Smile Design (DSD) Simulation",
+      "price": "PHP 1,500 - PHP 3,000",
+      "description": "A digital planning tool where photos of the patient's smile are analyzed and digitally modified to simulate the expected results of cosmetic treatment. Helps patients visualize the outcome before committing to procedures.",
+      "duration": "30 - 45 minutes for photo capture; simulation shared within 1 - 2 days"
+    },
+    {
+      "id": "offering_076",
+      "offeringType": "service",
+      "name": "Intraoral Camera Examination",
+      "price": "PHP 300 - PHP 500",
+      "description": "Use of a small camera to capture detailed images of the inside of the mouth, allowing the patient to view areas the dentist is examining in real time on a monitor. Helpful for patient education and identifying problem areas not easily visible.",
+      "duration": "15 - 20 minutes"
+    },
+    {
+      "id": "offering_077",
+      "offeringType": "service",
+      "name": "Pediatric Pulpotomy",
+      "price": "PHP 2,000 - PHP 3,500 per tooth",
+      "description": "A pulp treatment for primary (baby) teeth where the coronal portion of the pulp is removed and a medicated material is placed to preserve the remaining pulp and maintain the tooth until natural exfoliation. Usually followed by a stainless steel crown.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_078",
+      "offeringType": "service",
+      "name": "Pediatric Oral Prophylaxis",
+      "price": "PHP 600 - PHP 900",
+      "description": "A gentle professional dental cleaning adapted for children. Uses child-appropriate tools and flavored polishing paste to make the cleaning comfortable and positive for young patients. Includes basic oral hygiene coaching.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_079",
+      "offeringType": "service",
+      "name": "Laser-Assisted Teeth Whitening",
+      "price": "PHP 8,000 - PHP 12,000",
+      "description": "An advanced in-clinic whitening procedure using a dental laser to activate the whitening gel for faster and more intensive results. Suitable for patients seeking maximum whitening in a single visit.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_080",
+      "offeringType": "service",
+      "name": "Gum Depigmentation",
+      "price": "PHP 5,000 - PHP 10,000",
+      "description": "A cosmetic procedure to remove dark or uneven pigmentation from the gums to create a more uniform pink gum appearance. Can be performed using a scalpel technique or laser depending on the extent of pigmentation.",
+      "duration": "45 - 90 minutes"
+    },
+    {
+      "id": "offering_081",
+      "offeringType": "service",
+      "name": "Implant Maintenance Visit",
+      "price": "PHP 800 - PHP 1,200",
+      "description": "A specialized cleaning and examination visit for patients with dental implants. Includes professional cleaning around the implant using non-abrasive instruments and assessment of implant stability and surrounding tissue health.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_082",
+      "offeringType": "service",
+      "name": "Retainer Repair",
+      "price": "PHP 500 - PHP 1,500",
+      "description": "Repair of a cracked or broken removable retainer. Simple cracks may be repaired at the clinic while more extensive damage may require laboratory work. Bring all pieces of the broken retainer to the appointment.",
+      "duration": "Same day or within 3 - 5 working days if lab fabrication is needed"
+    },
+    {
+      "id": "offering_083",
+      "offeringType": "service",
+      "name": "Braces Adjustment Visit",
+      "price": "Included in braces treatment fee",
+      "description": "Scheduled monthly visit to activate the braces by adjusting the archwire tension and replacing elastic ligatures. Progress is monitored and treatment modifications are made as needed. Appointment duration and frequency are determined by the orthodontist.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_084",
+      "offeringType": "service",
+      "name": "Elastic Separators Placement (Orthodontic)",
+      "price": "PHP 200 - PHP 500",
+      "description": "Small rubber rings placed between the back teeth one to two weeks before brace fitting to create space for orthodontic bands. They cause mild temporary discomfort as the teeth separate.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_085",
+      "offeringType": "service",
+      "name": "Orthodontic Records Taking",
+      "price": "PHP 1,000 - PHP 2,000",
+      "description": "A complete set of pre-treatment orthodontic records including dental impressions or digital scans, clinical photographs, and x-rays. Used to plan and document orthodontic treatment.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_086",
+      "offeringType": "service",
+      "name": "Occlusal Adjustment",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "Minor reshaping of tooth surfaces to correct bite irregularities or adjust the fit of a new restoration. Addresses discomfort from a high bite after fillings, crowns, or other restorative work.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_087",
+      "offeringType": "service",
+      "name": "Tooth Desensitization Treatment",
+      "price": "PHP 500 - PHP 1,000 per tooth",
+      "description": "Application of desensitizing agents such as fluoride varnish or bonding resin to sensitive tooth surfaces to relieve discomfort from exposed dentin. Recommended for patients with generalized or localized hypersensitivity.",
+      "duration": "15 - 20 minutes"
+    },
+    {
+      "id": "offering_088",
+      "offeringType": "service",
+      "name": "Re-cementation of Loose Crown",
+      "price": "PHP 800 - PHP 1,500",
+      "description": "Cleaning and re-bonding of a crown that has become loose or fallen off. The crown is inspected, the tooth is prepared, and the crown is re-cemented using dental adhesive. A new crown may be recommended if the existing crown is damaged.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_089",
+      "offeringType": "service",
+      "name": "Re-cementation of Loose Bridge",
+      "price": "PHP 1,000 - PHP 2,000",
+      "description": "Removal, cleaning, and re-bonding of a dental bridge that has become loose. The bridge is evaluated for damage and the supporting teeth are examined. If the bridge or teeth are compromised, replacement may be advised.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_090",
+      "offeringType": "service",
+      "name": "Whitening Touch-Up Treatment",
+      "price": "PHP 2,000 - PHP 4,000",
+      "description": "A shorter in-clinic whitening session for patients who have previously completed whitening treatment and want to refresh or maintain their results. Less intensive than a full whitening procedure.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_091",
+      "offeringType": "service",
+      "name": "Cast Metal Framework Partial Denture",
+      "price": "PHP 12,000 - PHP 22,000",
+      "description": "A removable partial denture with a precision-cast metal framework that provides better stability, thinner construction, and greater durability compared to an acrylic partial denture. Recommended for long-term use.",
+      "duration": "Multiple visits over 3 - 4 weeks"
+    },
+    {
+      "id": "offering_092",
+      "offeringType": "service",
+      "name": "Prenatal Dental Consultation",
+      "price": "PHP 300 - PHP 500",
+      "description": "A consultation visit specifically for pregnant patients to address oral health concerns during pregnancy, including pregnancy gingivitis, safe treatment options, and the relationship between gum disease and pregnancy complications.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_093",
+      "offeringType": "service",
+      "name": "Pit and Fissure Sealant",
+      "price": "PHP 500 - PHP 800 per tooth",
+      "description": "A resin coating applied into the deep grooves and pits of molar and premolar teeth to prevent cavity formation. Slightly different from standard dental sealants in application technique; this variant is used specifically for newly erupted back teeth with deep anatomical features.",
+      "duration": "10 - 15 minutes per tooth"
+    },
+    {
+      "id": "offering_094",
+      "offeringType": "service",
+      "name": "Oral Hygiene Instruction Session",
+      "price": "PHP 300 - PHP 500",
+      "description": "A one-on-one session with the dentist or dental staff where proper brushing technique, flossing, and interdental cleaning are demonstrated and practiced. Tailored to the patient's dental appliances, conditions, or specific needs.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_095",
+      "offeringType": "service",
+      "name": "Maryland Bridge",
+      "price": "PHP 10,000 - PHP 18,000",
+      "description": "A conservative bridge that uses metal or porcelain wings bonded to the back surfaces of adjacent teeth to support a false tooth without requiring full crowns on the supporting teeth. Most suitable for front teeth replacement.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_096",
+      "offeringType": "service",
+      "name": "Gold Crown",
+      "price": "PHP 10,000 - PHP 18,000 per unit",
+      "description": "A dental crown made entirely from a gold alloy. Highly durable, biocompatible, and requiring minimal tooth preparation. Preferred by some patients for back teeth due to exceptional longevity, though less aesthetic than ceramic options.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_097",
+      "offeringType": "service",
+      "name": "E.max (Lithium Disilicate) Crown",
+      "price": "PHP 12,000 - PHP 18,000 per unit",
+      "description": "A premium all-ceramic crown made from lithium disilicate glass ceramic, known for its excellent combination of strength and outstanding translucency that closely mimics natural tooth enamel. Ideal for front teeth and visible areas.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_098",
+      "offeringType": "service",
+      "name": "Apicoectomy",
+      "price": "PHP 5,000 - PHP 10,000 per tooth",
+      "description": "A minor surgical procedure to remove the tip of a tooth root along with any infected tissue when conventional root canal retreatment is not sufficient. The cut end of the root is sealed to prevent reinfection.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_099",
+      "offeringType": "service",
+      "name": "Fluoride Varnish Application",
+      "price": "PHP 400 - PHP 700",
+      "description": "Application of a concentrated fluoride varnish directly to tooth surfaces for targeted enamel strengthening and cavity prevention. Especially useful for young children, patients with exposed root surfaces, and those undergoing orthodontic treatment.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_100",
+      "offeringType": "service",
+      "name": "Denture Insertion and Adjustment Visit",
+      "price": "Included in denture fabrication fee",
+      "description": "The final delivery appointment where the completed denture is seated in the patient's mouth, evaluated for fit, bite, and aesthetics, and adjusted as needed. Follow-up adjustments are typically included within the first two to four weeks.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_101",
+      "offeringType": "service",
+      "name": "Medical History Review and Risk Assessment",
+      "price": "Included in consultation fee",
+      "description": "A systematic review of the patient's medical and medication history to identify risk factors relevant to dental treatment, such as blood disorders, cardiac conditions, diabetes, or allergies. Performed at the initial visit and updated at regular intervals.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_102",
+      "offeringType": "service",
+      "name": "Clinical Dental Photography",
+      "price": "PHP 300 - PHP 600",
+      "description": "Standardized clinical photographs of the patient's teeth, smile, and facial profile taken for documentation, treatment planning, before-and-after comparison, and communication with dental laboratories.",
+      "duration": "15 - 20 minutes"
+    },
+    {
+      "id": "offering_103",
+      "offeringType": "service",
+      "name": "Occlusal X-Ray",
+      "price": "PHP 200 - PHP 400 per film",
+      "description": "A specialized dental radiograph taken with the film placed flat against the biting surface of the teeth. Used to detect impacted teeth, locate salivary stones, assess cleft palate conditions, or find foreign objects in the jaw.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_104",
+      "offeringType": "service",
+      "name": "Alveoplasty (Bone Smoothing)",
+      "price": "PHP 3,000 - PHP 6,000",
+      "description": "A minor surgical procedure to smooth and reshape the jawbone after tooth extraction to create a more even ridge suitable for denture placement or implants. Reduces sharp bony prominences that cause discomfort under a denture.",
+      "duration": "30 - 60 minutes"
+    },
+    {
+      "id": "offering_105",
+      "offeringType": "service",
+      "name": "Blood Pressure Pre-Screening",
+      "price": "Complimentary",
+      "description": "A brief blood pressure check performed before dental procedures for patients with a history of hypertension or as a routine precautionary measure. Helps ensure patient safety prior to administering local anesthesia.",
+      "duration": "5 minutes"
+    },
+    {
+      "id": "offering_106",
+      "offeringType": "service",
+      "name": "Palatal Expander Consultation",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "An evaluation to determine whether a palatal expander is appropriate for a pediatric patient with a narrow upper jaw. Includes bite assessment, x-ray review, and discussion of appliance options and expected outcomes.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_107",
+      "offeringType": "product",
+      "name": "Chlorhexidine Mouthwash",
+      "price": "PHP 180 - PHP 300",
+      "description": "An antibacterial mouth rinse prescribed for patients recovering from gum treatment, surgery, or procedures requiring enhanced oral hygiene. Reduces bacteria in the mouth and helps control plaque accumulation.",
+      "duration": null
+    },
+    {
+      "id": "offering_108",
+      "offeringType": "product",
+      "name": "Water Flosser",
+      "price": "PHP 800 - PHP 1,500",
+      "description": "An oral irrigation device that uses a pulsed water stream to clean between teeth and along the gumline. Particularly beneficial for patients with braces, implants, bridges, or limited manual dexterity.",
+      "duration": null
+    },
+    {
+      "id": "offering_109",
+      "offeringType": "product",
+      "name": "Dental Floss",
+      "price": "PHP 60 - PHP 120",
+      "description": "Standard waxed or unwaxed nylon floss for daily interdental cleaning. Effective for removing plaque and food debris from between teeth and under the gumline where a toothbrush cannot reach.",
+      "duration": null
+    },
+    {
+      "id": "offering_110",
+      "offeringType": "product",
+      "name": "Tongue Cleaner",
+      "price": "PHP 80 - PHP 150",
+      "description": "A plastic or stainless steel tongue scraper used to remove bacterial coating from the tongue surface. Helps reduce bad breath and improves overall oral hygiene by addressing a commonly overlooked area.",
+      "duration": null
+    },
+    {
+      "id": "offering_111",
+      "offeringType": "product",
+      "name": "Children's Fluoride Toothpaste",
+      "price": "PHP 120 - PHP 180",
+      "description": "A child-appropriate fluoride toothpaste in mild fruit or bubble gum flavors. Formulated with a lower fluoride concentration suitable for children under six years of age. Encourages consistent brushing habits.",
+      "duration": null
+    },
+    {
+      "id": "offering_112",
+      "offeringType": "product",
+      "name": "Soft-Bristled Adult Toothbrush",
+      "price": "PHP 80 - PHP 150",
+      "description": "A manual toothbrush with soft nylon bristles that effectively remove plaque without damaging enamel or irritating sensitive gum tissue. Dentist-recommended for daily use by most adult patients.",
+      "duration": null
+    },
+    {
+      "id": "offering_113",
+      "offeringType": "product",
+      "name": "Remineralizing Toothpaste",
+      "price": "PHP 250 - PHP 450",
+      "description": "A specialized toothpaste containing hydroxyapatite or calcium phosphate compounds that help replenish mineral loss in early-stage tooth decay. Recommended for patients with weakened enamel or high cavity risk.",
+      "duration": null
+    },
+    {
+      "id": "offering_114",
+      "offeringType": "product",
+      "name": "Fluoride Mouth Rinse",
+      "price": "PHP 150 - PHP 280",
+      "description": "A daily or weekly fluoride rinse used to supplement brushing and strengthen enamel. Available in non-alcohol formulations suitable for children and patients with dry mouth.",
+      "duration": null
+    },
+    {
+      "id": "offering_115",
+      "offeringType": "product",
+      "name": "Proxy Brush",
+      "price": "PHP 120 - PHP 200",
+      "description": "A tiny brush with a single tuft or conical bristle head for cleaning around implants, between teeth, and under pontics of dental bridges where standard floss is difficult to use.",
+      "duration": null
+    },
+    {
+      "id": "offering_116",
+      "offeringType": "product",
+      "name": "Retainer Cleaning Tablets",
+      "price": "PHP 150 - PHP 250",
+      "description": "Effervescent cleaning tablets designed to dissolve in water and deep-clean removable retainers, mouthguards, and clear aligners. Removes bacteria, odors, and staining without brushing.",
+      "duration": null
+    },
+    {
+      "id": "offering_117",
+      "offeringType": "product",
+      "name": "Denture Adhesive",
+      "price": "PHP 200 - PHP 350",
+      "description": "A dental adhesive cream or powder applied to the fitting surface of a denture to improve its retention and stability throughout the day. Particularly useful for patients with reduced saliva flow or loose-fitting dentures.",
+      "duration": null
+    },
+    {
+      "id": "offering_118",
+      "offeringType": "product",
+      "name": "Xylitol Chewing Gum",
+      "price": "PHP 80 - PHP 150",
+      "description": "Sugar-free chewing gum containing xylitol, a natural sweetener that inhibits cavity-causing bacteria and stimulates saliva production. Useful as a supplement to regular oral hygiene, especially after meals when brushing is not immediately possible.",
+      "duration": null
+    },
+    {
+      "id": "offering_119",
+      "offeringType": "product",
+      "name": "Orthodontic Flosser",
+      "price": "PHP 150 - PHP 280",
+      "description": "A pre-threaded floss device with a stiff end for threading under orthodontic archwires. Makes flossing significantly easier for patients with braces and helps maintain gum health during orthodontic treatment.",
+      "duration": null
+    },
+    {
+      "id": "offering_120",
+      "offeringType": "product",
+      "name": "Mouthguard Storage Case",
+      "price": "PHP 80 - PHP 150",
+      "description": "A ventilated hard plastic case for storing nightguards, retainers, sports mouthguards, and clear aligners when not in use. Helps prevent damage, contamination, and accidental loss.",
+      "duration": null
+    },
+    {
+      "id": "offering_121",
+      "offeringType": "service",
+      "name": "Braces Debonding (Removal)",
+      "price": "Included in braces treatment fee",
+      "description": "The final procedure of orthodontic treatment where all brackets and wires are removed from the teeth. The teeth are then thoroughly polished to remove adhesive residue. Impressions or scans are taken for retainer fabrication.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_122",
+      "offeringType": "service",
+      "name": "Oral Medicine Consultation",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "A consultation with our oral medicine specialist for the diagnosis and management of oral mucosal conditions such as mouth ulcers, oral lesions, lichen planus, burning mouth syndrome, and dry mouth.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_123",
+      "offeringType": "service",
+      "name": "Composite Bonding for Diastema Closure",
+      "price": "PHP 3,000 - PHP 5,000 per gap",
+      "description": "Application of tooth-colored composite resin to close gaps or spaces between teeth. A minimally invasive cosmetic procedure that can be completed in a single visit without removing tooth structure.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_124",
+      "offeringType": "service",
+      "name": "Tooth Recontouring",
+      "price": "PHP 500 - PHP 1,000 per tooth",
+      "description": "A conservative cosmetic procedure where a small amount of enamel is gently shaped and polished to improve the appearance of slightly chipped, uneven, or overlapping teeth. No anesthesia is typically required.",
+      "duration": "15 - 30 minutes per tooth"
+    },
+    {
+      "id": "offering_125",
+      "offeringType": "service",
+      "name": "Periodontal Flap Surgery",
+      "price": "PHP 8,000 - PHP 15,000 per quadrant",
+      "description": "A surgical procedure where the gum tissue is folded back to allow thorough removal of tartar and infected tissue from deep periodontal pockets that cannot be reached by non-surgical cleaning. The gum is then sutured back in place.",
+      "duration": "60 - 120 minutes per quadrant"
+    },
+    {
+      "id": "offering_126",
+      "offeringType": "service",
+      "name": "Pediatric Preventive Dental Package",
+      "price": "PHP 1,500 - PHP 2,500",
+      "description": "A bundled preventive care package for pediatric patients including an oral examination, professional cleaning, fluoride treatment, and dental sealants on newly erupted permanent molars. Designed to provide comprehensive preventive care in a single efficient visit.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_127",
+      "offeringType": "service",
+      "name": "Implant Uncovering (Second Stage Surgery)",
+      "price": "PHP 3,000 - PHP 5,000",
+      "description": "A minor surgical procedure performed after osseointegration is complete to expose the top of the implant by removing the overlying gum tissue. A healing abutment is attached to guide proper gum shaping before the final crown is placed.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_128",
+      "offeringType": "service",
+      "name": "Impression Taking for Custom Appliance",
+      "price": "PHP 300 - PHP 600",
+      "description": "Recording of a dental impression or digital scan of the teeth to fabricate a custom dental appliance such as a nightguard, retainer, whitening tray, or sports mouthguard. A required step before appliance fabrication.",
+      "duration": "10 - 20 minutes"
+    },
+    {
+      "id": "offering_129",
+      "offeringType": "service",
+      "name": "Sinus Lift Consultation",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "An evaluation to determine whether a sinus lift procedure is needed for patients with insufficient bone height in the upper jaw prior to implant placement in the molar region. Includes review of radiographs and discussion of risks and expected outcomes.",
+      "duration": "30 - 45 minutes"
+    },
+    {
+      "id": "offering_130",
+      "offeringType": "service",
+      "name": "Tongue-Tie Release (Lingual Frenectomy)",
+      "price": "PHP 3,000 - PHP 5,000",
+      "description": "Surgical release of a restricted lingual frenum (tongue tie) that limits tongue mobility. Indicated in infants with breastfeeding difficulties or in children and adults with speech impediments caused by a short frenum.",
+      "duration": "20 - 30 minutes"
+    }
+  ],
+  "policies": [
+    {
+      "id": "policy_001",
+      "category": "booking",
+      "title": "Appointment Booking Policy",
+      "description": "Appointments can be booked via phone call, SMS, Facebook Messenger, Viber, or our website booking form. A booking is confirmed only upon receiving a confirmation message from our staff. Walk-in patients are accommodated based on slot availability but will be queued after all scheduled appointments."
+    },
+    {
+      "id": "policy_002",
+      "category": "cancellation",
+      "title": "Appointment Cancellation Policy",
+      "description": "Patients must notify the clinic of any cancellation at least 24 hours before the scheduled appointment. Failure to provide advance notice may affect scheduling priority in future bookings. Repeated last-minute cancellations may require a booking deposit for subsequent appointments."
+    },
+    {
+      "id": "policy_003",
+      "category": "late_arrival",
+      "title": "Late Arrival Policy",
+      "description": "Patients who arrive more than 15 minutes after their scheduled appointment time may be rescheduled or placed at the end of the queue, subject to dentist availability. We encourage patients to arrive at least 10 minutes before their appointment to complete any necessary paperwork."
+    },
+    {
+      "id": "policy_004",
+      "category": "payment",
+      "title": "Payment Policy",
+      "description": "Full payment is due upon completion of the dental service. We accept cash, GCash, Maya, and credit or debit cards. Payments are non-transferable to other patients or services. Official receipts are issued for all transactions upon request."
+    },
+    {
+      "id": "policy_005",
+      "category": "child_patient",
+      "title": "Child Patient Policy",
+      "description": "Patients below 18 years of age must be accompanied by a parent or legal guardian during the full duration of the consultation and procedure. A signed parental consent form is required before any dental treatment is performed on a minor."
+    },
+    {
+      "id": "policy_006",
+      "category": "rescheduling",
+      "title": "Rescheduling Policy",
+      "description": "Patients may reschedule their appointment up to 24 hours before the scheduled time without penalty. Rescheduling requests made less than 24 hours in advance are subject to availability and may result in a delay of several days before a new slot is offered."
+    },
+    {
+      "id": "policy_007",
+      "category": "no_show",
+      "title": "No-Show Policy",
+      "description": "A no-show is defined as a patient who fails to appear for their scheduled appointment without prior notice. Patients with a no-show record may be required to pay a reservation deposit to confirm future bookings. Repeated no-shows may result in suspension of online booking privileges."
+    },
+    {
+      "id": "policy_008",
+      "category": "refund",
+      "title": "Refund Policy",
+      "description": "Payments for completed services are non-refundable. For advance payments or deposits, refunds may be requested if the procedure has not yet begun and the request is made within 48 hours. Lab fees for prosthetic work that has already been sent to the laboratory are non-refundable."
+    },
+    {
+      "id": "policy_009",
+      "category": "installment",
+      "title": "Installment Payment Policy",
+      "description": "Installment arrangements are available for major dental treatments with a total cost of PHP 10,000 or more, including braces, implants, and full dentures. A minimum down payment of 50% is required before treatment begins. Remaining balance must be settled according to the agreed payment schedule."
+    },
+    {
+      "id": "policy_010",
+      "category": "hmo_insurance",
+      "title": "HMO and Insurance Policy",
+      "description": "We accept accredited HMO cards for covered dental services. Patients must present a valid HMO card and letter of authorization (LOA) from their provider on the day of the appointment. Coverage depends on the patient's plan and provider. Services not covered by HMO must be settled out-of-pocket."
+    },
+    {
+      "id": "policy_011",
+      "category": "emergency_appointment",
+      "title": "Emergency Appointment Policy",
+      "description": "Dental emergencies such as severe toothache, dental trauma, abscess, or post-operative complications are prioritized within clinic hours. Patients are advised to call ahead so staff can prepare. Emergency appointments are subject to an additional emergency fee."
+    },
+    {
+      "id": "policy_012",
+      "category": "post_treatment_follow_up",
+      "title": "Post-Treatment Follow-Up Policy",
+      "description": "Patients who have undergone major procedures such as extractions, root canals, implant placement, or prosthetic delivery are expected to return for a follow-up visit within the period recommended by their dentist."
+    },
+    {
+      "id": "policy_013",
+      "category": "privacy",
+      "title": "Patient Privacy and Data Policy",
+      "description": "All patient records, including personal information, dental history, x-rays, and treatment notes, are kept strictly confidential in accordance with the Data Privacy Act of 2012."
+    },
+    {
+      "id": "policy_014",
+      "category": "senior_citizen_pwd",
+      "title": "Senior Citizen and PWD Discount Policy",
+      "description": "We comply with the Expanded Senior Citizens Act (RA 9994) and the Magna Carta for Persons with Disability (RA 7277)."
+    },
+    {
+      "id": "policy_015",
+      "category": "informed_consent",
+      "title": "Informed Consent Policy",
+      "description": "Before any dental procedure, the dentist will explain the nature of the treatment, its purpose, expected outcomes, risks, and alternatives. Patients are required to sign an informed consent form before the procedure begins. For minors, consent must be provided by a parent or legal guardian."
+    },
+    {
+      "id": "policy_016",
+      "category": "medical_history",
+      "title": "Medical History Disclosure Policy",
+      "description": "All patients are required to complete a medical history form at their first visit and to update it at subsequent visits when health changes occur."
+    },
+    {
+      "id": "policy_017",
+      "category": "medical_clearance",
+      "title": "Pre-Treatment Medical Clearance Policy",
+      "description": "For patients with complex systemic conditions such as uncontrolled hypertension, heart disease, bleeding disorders, or those on anticoagulant therapy, a medical clearance letter from the patient's physician may be required before surgical or invasive dental procedures are performed."
+    },
+    {
+      "id": "policy_018",
+      "category": "xray_safety",
+      "title": "Dental X-Ray Safety Policy",
+      "description": "Dental radiographs are only taken when clinically necessary and justified. Lead aprons are provided to all patients during x-ray exposure."
+    },
+    {
+      "id": "policy_019",
+      "category": "infection_control",
+      "title": "Sterilization and Infection Control Policy",
+      "description": "All reusable dental instruments are sterilized in an autoclave between every patient use. Disposable materials such as gloves, masks, and suction tips are used once and discarded. Surfaces and equipment are disinfected after each patient. We adhere to DOH infection prevention and control standards."
+    },
+    {
+      "id": "policy_020",
+      "category": "allergy_disclosure",
+      "title": "Allergy and Drug Sensitivity Disclosure Policy",
+      "description": "Patients must disclose known allergies to medications, latex, dental materials, or anesthetics before any procedure. This information is recorded in the patient's chart and reviewed by the treating dentist before each procedure to prevent allergic reactions."
+    },
+    {
+      "id": "policy_021",
+      "category": "antibiotic_premedication",
+      "title": "Antibiotic Premedication Policy",
+      "description": "Patients with specific cardiac conditions, prosthetic joints, or immunocompromised states may require antibiotic premedication before certain dental procedures to prevent infection."
+    },
+    {
+      "id": "policy_022",
+      "category": "photography",
+      "title": "Dental Photography and Documentation Policy",
+      "description": "Clinical photographs may be taken for treatment documentation, communication with dental laboratories, or treatment planning purposes. Photographs used for any other purpose including educational or promotional use require explicit written consent from the patient."
+    },
+    {
+      "id": "policy_023",
+      "category": "feedback_complaints",
+      "title": "Patient Feedback and Complaints Policy",
+      "description": "We welcome patient feedback to continuously improve our services. Concerns or complaints may be raised with the front desk staff or submitted through our online feedback form. All complaints are reviewed by clinic management and responded to within five working days."
+    },
+    {
+      "id": "policy_024",
+      "category": "online_booking",
+      "title": "Online Booking Modification Policy",
+      "description": "Appointments booked online can be modified or cancelled through our website or messaging channels up to 24 hours before the scheduled time. Requests to modify appointments within 24 hours of the visit must be made by phone or direct message to the clinic to ensure prompt handling."
+    },
+    {
+      "id": "policy_025",
+      "category": "deposit",
+      "title": "Booking Deposit Policy for Major Procedures",
+      "description": "A booking deposit of 30% to 50% of the estimated treatment cost is required to confirm appointments for major procedures such as implants, full dentures, and comprehensive braces treatment. Deposits are applied toward the total treatment balance."
+    },
+    {
+      "id": "policy_026",
+      "category": "warranty",
+      "title": "Warranty on Prosthetic Restorations",
+      "description": "Dental prosthetic restorations including crowns, bridges, veneers, and dentures carry a one-year warranty against laboratory defects from the date of delivery. This warranty does not cover damage caused by trauma, improper use, neglect, or changes in the underlying teeth or bone."
+    },
+    {
+      "id": "policy_027",
+      "category": "laboratory",
+      "title": "Dental Laboratory Turnaround Policy",
+      "description": "Restorations requiring laboratory fabrication such as crowns, bridges, veneers, and dentures typically take 5 to 10 working days. Complex restorations or those requiring multiple try-ins may take longer."
+    },
+    {
+      "id": "policy_028",
+      "category": "records",
+      "title": "Dental Record Release Policy",
+      "description": "Patients may request copies of their dental records, x-rays, and treatment notes. Requests must be submitted in writing and will be processed within five working days. There may be a nominal fee for printing or digital transfer of records. Original records remain the property of the clinic."
+    },
+    {
+      "id": "policy_029",
+      "category": "referral",
+      "title": "Specialist Referral Policy",
+      "description": "When a dental condition requires management beyond the scope of our clinic's services, the treating dentist will provide a written referral to an appropriate specialist."
+    },
+    {
+      "id": "policy_030",
+      "category": "companion",
+      "title": "Patient Companion Policy",
+      "description": "One companion is allowed per patient inside the treatment area. Additional companions must wait in the designated waiting area. Companions must maintain quiet and refrain from interfering with the dental procedure."
+    },
+    {
+      "id": "policy_031",
+      "category": "treatment_plan",
+      "title": "Treatment Plan Modification Policy",
+      "description": "A proposed treatment plan may be modified based on findings that arise during the course of treatment, changes in the patient's dental or medical condition, or the patient's informed preference."
+    },
+    {
+      "id": "policy_032",
+      "category": "blood_pressure",
+      "title": "Blood Pressure Pre-Procedure Screening Policy",
+      "description": "Blood pressure is monitored before procedures involving local anesthesia for patients with known hypertension or cardiac conditions."
+    },
+    {
+      "id": "policy_033",
+      "category": "pregnant_patient",
+      "title": "Pregnant Patient Care Policy",
+      "description": "Pregnant patients must inform the clinic of their pregnancy and gestational age before any treatment. Routine and emergency dental care can generally be provided safely throughout pregnancy."
+    },
+    {
+      "id": "policy_034",
+      "category": "dental_anxiety",
+      "title": "Dental Anxiety Accommodation Policy",
+      "description": "We are committed to providing a comfortable experience for anxious patients. Patients may request their preferred dentist, a brief pre-treatment discussion, extra explanation during procedures, or scheduled breaks during longer appointments."
+    },
+    {
+      "id": "policy_035",
+      "category": "weekend_holiday",
+      "title": "Weekend and Holiday Appointment Policy",
+      "description": "Saturday appointments are available during regular clinic hours. Appointments on regular holidays must be arranged in advance and are subject to availability and staff scheduling. Emergency cases may still be accommodated on certain holidays."
+    },
+    {
+      "id": "policy_036",
+      "category": "social_media",
+      "title": "Social Media and Patient Testimonial Policy",
+      "description": "The clinic may occasionally share anonymized treatment outcomes or general dental health content on social media. Patient identifiable photographs or cases will only be shared with explicit written consent."
+    },
+    {
+      "id": "policy_037",
+      "category": "post_op_compliance",
+      "title": "Post-Operative Instruction Compliance Policy",
+      "description": "Patients are provided with written post-operative instructions following surgical or restorative procedures. Failure to follow these instructions may compromise healing and treatment outcomes."
+    },
+    {
+      "id": "policy_038",
+      "category": "material_selection",
+      "title": "Dental Material Selection and Consent Policy",
+      "description": "The treating dentist will recommend the most clinically appropriate restorative material based on the tooth's location, function, and the patient's overall condition. Patients who prefer an alternative material will be informed of any differences in performance or longevity and must sign a material."
+    },
+    {
+      "id": "policy_039",
+      "category": "student_discount",
+      "title": "Student Discount Policy",
+      "description": "Students with valid school identification are eligible for a 10% discount on select routine dental services including consultation, oral prophylaxis, and dental sealants. The discount applies to out-of-pocket payment only and cannot be combined with other promotions or discounts."
+    },
+    {
+      "id": "policy_040",
+      "category": "referral_discount",
+      "title": "Patient Referral Discount Policy",
+      "description": "Established patients who refer a new patient to the clinic are entitled to a PHP 300 discount on their next visit upon the new patient's first completed appointment. The referring patient must be identified by the new patient at the time of booking."
+    },
+    {
+      "id": "policy_041",
+      "category": "personal_belongings",
+      "title": "Personal Belongings Policy",
+      "description": "Patients are advised to leave valuables at home or keep them in their possession at all times. The clinic is not responsible for loss or damage to personal belongings, including mobile phones, wallets, or accessories, while on the clinic premises."
+    },
+    {
+      "id": "policy_042",
+      "category": "hygiene_ppe",
+      "title": "Clinic Hygiene and Safety Protocol",
+      "description": "All clinical staff wear appropriate personal protective equipment including masks, gloves, and protective eyewear during patient care. Patients are requested to sanitize their hands upon entering the clinic."
+    },
+    {
+      "id": "policy_043",
+      "category": "emergency_surcharge",
+      "title": "Emergency Appointment Surcharge Policy",
+      "description": "Emergency dental appointments scheduled outside the regular booking queue are subject to an emergency service fee of PHP 200 to PHP 500 in addition to the standard service cost."
+    },
+    {
+      "id": "policy_044",
+      "category": "package_deal",
+      "title": "Dental Package Deal Policy",
+      "description": "Bundled dental packages combining multiple services at a reduced total price are available periodically. Package deals are non-transferable to other patients, non-refundable once availed, and must be completed within six months of purchase."
+    },
+    {
+      "id": "policy_045",
+      "category": "loyalty_program",
+      "title": "Patient Loyalty Program Policy",
+      "description": "Patients who have visited the clinic for three or more consecutive years are enrolled in our loyalty program. Loyalty members receive priority scheduling, annual check-up discounts, and exclusive access to seasonal promotional packages."
+    },
+    {
+      "id": "policy_046",
+      "category": "pediatric_behavior",
+      "title": "Pediatric Behavior Management Policy",
+      "description": "Our dentists use evidence-based, child-friendly behavior guidance techniques to help young patients cooperate with dental treatment. These include tell-show-do, voice control, and positive reinforcement. Physical restraint is not practiced."
+    },
+    {
+      "id": "policy_047",
+      "category": "outcome_monitoring",
+      "title": "Clinical Outcome Monitoring Policy",
+      "description": "The clinic monitors treatment outcomes through scheduled follow-up visits and periodic reassessment of completed restorations, orthodontic results, and surgical sites. Patients who do not return for scheduled follow-ups will be contacted by the clinic."
+    },
+    {
+      "id": "policy_048",
+      "category": "interpreter",
+      "title": "Language and Communication Assistance Policy",
+      "description": "Clinical consultations are conducted primarily in Filipino and English. Patients who communicate in a regional dialect are encouraged to bring a companion who can assist with translation if needed. Our staff will make reasonable efforts to ensure clear communication of all treatment information."
+    },
+    {
+      "id": "policy_049",
+      "category": "booking_confirmation",
+      "title": "Appointment Reminder and Confirmation Policy",
+      "description": "Appointment reminder messages are sent via SMS or Facebook Messenger one day before the scheduled visit. Patients are expected to confirm or reschedule upon receiving the reminder. Unconfirmed appointments may be released to other patients on a waiting list, particularly for high-demand time slots."
+    },
+    {
+      "id": "policy_050",
+      "category": "multi_branch",
+      "title": "Multi-Branch Patient Records Policy",
+      "description": "Patient records from one branch of the clinic may be accessed by another branch to ensure continuity of care. Patients must consent to inter-branch record sharing at registration. Records are transferred securely and only to authorized clinic staff."
+    }
+  ],
+  "dentistProfiles": [
+    {
+      "id": "dentist_001",
+      "name": "Dr. Maria Santos",
+      "aliases": [
+        "Dra. Maria",
+        "Doc Maria",
+        "Dr. Santos"
+      ],
+      "specialization": "General Dentistry",
+      "bio": "Dr. Maria Santos is a licensed general dentist with over 10 years of clinical experience in comprehensive oral care. She handles routine check-ups, oral prophylaxis, tooth extractions, and composite fillings."
+    },
+    {
+      "id": "dentist_002",
+      "name": "Dr. Jose Reyes",
+      "aliases": [
+        "Doc Jose",
+        "Dr. Reyes",
+        "Doc Boy"
+      ],
+      "specialization": "Orthodontics",
+      "bio": "Dr. Jose Reyes is a licensed orthodontic specialist with extensive experience in metal braces, ceramic braces, and retainer management."
+    },
+    {
+      "id": "dentist_003",
+      "name": "Dr. Ana Lim",
+      "aliases": [
+        "Dra. Ana",
+        "Doc Ana",
+        "Dr. Lim"
+      ],
+      "specialization": "Endodontics",
+      "bio": "Dr. Ana Lim specializes in root canal treatments and the management of pulp-related dental diseases. She uses modern rotary endodontic instruments to ensure efficient and comfortable procedures. Dr. Lim also handles complex extractions and urgent dental pain cases."
+    },
+    {
+      "id": "dentist_004",
+      "name": "Dr. Carlo Mendoza",
+      "aliases": [
+        "Doc Carlo",
+        "Dr. Mendoza"
+      ],
+      "specialization": "Oral and Maxillofacial Surgery",
+      "bio": "Dr. Carlo Mendoza is an oral and maxillofacial surgeon specializing in surgical extractions, impacted wisdom tooth removal, implant placement, and jaw-related procedures. He is trained in administering local anesthesia and managing surgical complications."
+    },
+    {
+      "id": "dentist_005",
+      "name": "Dr. Patricia Cruz",
+      "aliases": [
+        "Dra. Patty",
+        "Doc Patty",
+        "Dr. Cruz"
+      ],
+      "specialization": "Periodontics",
+      "bio": "Dr. Patricia Cruz is a periodontist who focuses on the prevention, diagnosis, and treatment of gum diseases. She performs scaling and root planing, gum surgery, and periodontal maintenance. She also handles dental implant placement in coordination with the restorative team."
+    },
+    {
+      "id": "dentist_006",
+      "name": "Dr. Ramon Dela Cruz",
+      "aliases": [
+        "Doc Ramon",
+        "Dr. Dela Cruz"
+      ],
+      "specialization": "Prosthodontics",
+      "bio": "Dr. Ramon Dela Cruz specializes in the restoration and replacement of teeth, including dental crowns, bridges, veneers, complete and partial dentures, and implant-supported restorations. He works closely with dental laboratories to deliver precise and aesthetically pleasing prosthetic outcomes."
+    },
+    {
+      "id": "dentist_007",
+      "name": "Dr. Sofia Garcia",
+      "aliases": [
+        "Dra. Sofia",
+        "Doc Sofia",
+        "Dr. Garcia"
+      ],
+      "specialization": "Pediatric Dentistry",
+      "bio": "Dr. Sofia Garcia specializes in dental care for infants, children, and adolescents. She provides preventive services such as fluoride treatments and sealants, as well as restorative treatments including fillings and stainless steel crowns."
+    },
+    {
+      "id": "dentist_008",
+      "name": "Dr. Miguel Tan",
+      "aliases": [
+        "Doc Miguel",
+        "Dr. Tan"
+      ],
+      "specialization": "Cosmetic Dentistry",
+      "bio": "Dr. Miguel Tan has a strong focus on smile enhancement procedures including in-clinic teeth whitening, composite and porcelain veneers, and smile makeover planning. He combines clinical expertise with an eye for aesthetics to deliver natural-looking, transformative results."
+    },
+    {
+      "id": "dentist_009",
+      "name": "Dr. Rosario Bautista",
+      "aliases": [
+        "Dra. Rose",
+        "Doc Rose",
+        "Dr. Bautista"
+      ],
+      "specialization": "General Dentistry",
+      "bio": "Dr. Rosario Bautista is a seasoned general dentist who handles routine dental care including check-ups, fillings, extractions, and dentures. She has a special interest in geriatric dentistry and provides compassionate care to elderly patients with complex dental needs."
+    },
+    {
+      "id": "dentist_010",
+      "name": "Dr. Kevin Fernandez",
+      "aliases": [
+        "Doc Kevin",
+        "Dr. Fernandez"
+      ],
+      "specialization": "Orthodontics",
+      "bio": "Dr. Kevin Fernandez is an associate orthodontist assisting with braces adjustments, retainer fittings, and clear aligner monitoring. He trained under Dr. Reyes and is familiar with a range of orthodontic appliances."
+    },
+    {
+      "id": "dentist_011",
+      "name": "Dr. Maribel Navarro",
+      "aliases": [
+        "Dra. Maribel",
+        "Doc Bel",
+        "Dr. Navarro"
+      ],
+      "specialization": "Periodontics",
+      "bio": "Dr. Maribel Navarro is a senior periodontist with over 15 years of experience in the diagnosis and management of gum diseases. She performs advanced periodontal surgeries including flap procedures, bone regeneration, and soft tissue grafts."
+    },
+    {
+      "id": "dentist_012",
+      "name": "Dr. Emmanuel Santos",
+      "aliases": [
+        "Doc Manny",
+        "Dr. E. Santos"
+      ],
+      "specialization": "Oral Medicine and Oral Pathology",
+      "bio": "Dr. Emmanuel Santos specializes in the diagnosis and non-surgical management of oral mucosal conditions including recurrent mouth ulcers, oral lichen planus, burning mouth syndrome, and salivary gland disorders."
+    },
+    {
+      "id": "dentist_013",
+      "name": "Dr. Christine Go",
+      "aliases": [
+        "Doc Christine",
+        "Dra. Christine",
+        "Dr. Go"
+      ],
+      "specialization": "Cosmetic Dentistry",
+      "bio": "Dr. Christine Go is a cosmetic dentistry associate who assists with smile design consultations, composite veneers, bonding, and teeth whitening. She collaborates closely with Dr."
+    },
+    {
+      "id": "dentist_014",
+      "name": "Dr. Adrian Villanueva",
+      "aliases": [
+        "Doc Adrian",
+        "Dr. Villanueva"
+      ],
+      "specialization": "Implantology",
+      "bio": "Dr. Adrian Villanueva is a dental implantologist with specialized training in implant placement, bone grafting, socket preservation, and implant prosthetics."
+    },
+    {
+      "id": "dentist_015",
+      "name": "Dr. Luisa Castillo",
+      "aliases": [
+        "Dra. Luisa",
+        "Doc Luisa",
+        "Dr. Castillo"
+      ],
+      "specialization": "General Dentistry",
+      "bio": "Dr. Luisa Castillo is a part-time general dentist available on select weekdays and Saturdays. She handles check-ups, fillings, extractions, and referrals for more specialized care."
+    },
+    {
+      "id": "dentist_016",
+      "name": "Dr. Ryan Ong",
+      "aliases": [
+        "Doc Ryan",
+        "Dr. Ong"
+      ],
+      "specialization": "Oral and Maxillofacial Surgery",
+      "bio": "Dr. Ryan Ong is an associate oral surgeon who assists with surgical extractions, minor soft tissue surgeries, and post-operative management. He provides coverage during Dr."
+    },
+    {
+      "id": "dentist_017",
+      "name": "Dr. Diana Torres",
+      "aliases": [
+        "Dra. Diana",
+        "Doc Diana",
+        "Dr. Torres"
+      ],
+      "specialization": "Orthodontics",
+      "bio": "Dr. Diana Torres is an orthodontist with a focus on clear aligner therapy and early orthodontic intervention in pediatric patients."
+    },
+    {
+      "id": "dentist_018",
+      "name": "Dr. Felix Aquino",
+      "aliases": [
+        "Doc Felix",
+        "Dr. Aquino"
+      ],
+      "specialization": "Pediatric Dentistry",
+      "bio": "Dr. Felix Aquino is an associate pediatric dentist specializing in dental care for children from infancy through early adolescence."
+    },
+    {
+      "id": "dentist_019",
+      "name": "Dr. Veronica Luna",
+      "aliases": [
+        "Dra. Vero",
+        "Doc Vero",
+        "Dr. Luna"
+      ],
+      "specialization": "Prosthodontics",
+      "bio": "Dr. Veronica Luna is a senior prosthodontist with deep expertise in full mouth rehabilitation, implant-supported prosthetics, and all-on-4 treatment planning. She oversees complex restorative cases and ensures precision and aesthetics in the delivery of crowns, bridges, and full-arch dentures."
+    },
+    {
+      "id": "dentist_020",
+      "name": "Dr. Bernard Chua",
+      "aliases": [
+        "Doc Bernard",
+        "Dr. Chua"
+      ],
+      "specialization": "Endodontics",
+      "bio": "Dr. Bernard Chua is an associate endodontist who handles root canal treatments, retreatments, and post-treatment management. He works alongside Dr. Lim on complex cases involving calcified canals, curved roots, and retreatment of previously filled teeth."
+    }
+  ]
+}

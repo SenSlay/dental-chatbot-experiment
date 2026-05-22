@@ -1,0 +1,219 @@
+{
+  "faqs": [
+    {
+      "id": "faq_001",
+      "question": "Do you accept walk-in patients?",
+      "answer": "Yes, we accept walk-in patients. However, patients with prior appointments are prioritized. We recommend booking in advance to minimize your waiting time."
+    },
+    {
+      "id": "faq_002",
+      "question": "What are your clinic hours?",
+      "answer": "Our clinic is open Monday to Saturday, 9:00 AM to 6:00 PM. We are closed on Sundays and public holidays."
+    },
+    {
+      "id": "faq_003",
+      "question": "How do I book an appointment?",
+      "answer": "You can book an appointment by calling our clinic, messaging us on Facebook or Viber, or using the online booking form on our website. Please have your name, contact number, preferred date and time, and the service you need ready."
+    },
+    {
+      "id": "faq_004",
+      "question": "Do you accept HMO or health insurance?",
+      "answer": "Yes, we accept select HMO providers. Please contact us in advance to confirm if your HMO card is accredited with our clinic and to verify which services are covered."
+    },
+    {
+      "id": "faq_005",
+      "question": "What payment methods do you accept?",
+      "answer": "We accept cash, GCash, Maya, and major credit or debit cards. Installment options may be available for select major treatments."
+    },
+    {
+      "id": "faq_006",
+      "question": "How do I reschedule my appointment?",
+      "answer": "To reschedule, please contact us at least 24 hours before your scheduled appointment via phone or message. This allows us to offer your slot to another patient in need."
+    },
+    {
+      "id": "faq_007",
+      "question": "Is in-clinic teeth whitening safe?",
+      "answer": "Yes, in-clinic teeth whitening is safe when performed by a licensed dentist. Some patients may experience mild tooth sensitivity afterward, which typically resolves within 24 to 48 hours."
+    },
+    {
+      "id": "faq_008",
+      "question": "How long does an oral prophylaxis take?",
+      "answer": "A standard oral prophylaxis, or professional dental cleaning, typically takes 45 minutes to an hour. This may vary depending on the amount of tartar buildup and your overall oral condition."
+    },
+    {
+      "id": "faq_009",
+      "question": "What should I do in a dental emergency?",
+      "answer": "For dental emergencies such as severe toothache, a knocked-out tooth, or facial swelling, please call our clinic immediately. We accommodate emergency cases on a priority basis during clinic hours."
+    },
+    {
+      "id": "faq_010",
+      "question": "Do you treat child patients?",
+      "answer": "Yes, we welcome pediatric patients. A parent or legal guardian must be present throughout the consultation and procedure for patients under 18 years of age."
+    }
+  ],
+  "offerings": [
+    {
+      "id": "offering_001",
+      "offeringType": "service",
+      "name": "Oral Prophylaxis",
+      "price": "PHP 800 - PHP 1,200",
+      "description": "Professional dental cleaning to remove plaque, tartar, and surface stains. Includes polishing for a cleaner and smoother tooth surface. Recommended every six months.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_002",
+      "offeringType": "service",
+      "name": "Simple Tooth Extraction",
+      "price": "PHP 500 - PHP 1,000",
+      "description": "Removal of a fully erupted tooth using dental forceps under local anesthesia. Recommended for severely decayed, damaged, or mobile teeth.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_003",
+      "offeringType": "service",
+      "name": "Composite Resin Filling",
+      "price": "PHP 1,500 - PHP 2,500 per tooth",
+      "description": "Tooth-colored filling material used to restore cavities or minor tooth fractures. Matches the natural shade of the tooth for an aesthetic and functional result.",
+      "duration": "45 - 60 minutes"
+    },
+    {
+      "id": "offering_004",
+      "offeringType": "service",
+      "name": "Traditional Metal Braces",
+      "price": "PHP 35,000 - PHP 55,000",
+      "description": "Fixed orthodontic appliance using metal brackets and archwires to correct tooth misalignment and bite problems. Includes monthly adjustment visits throughout the treatment.",
+      "duration": "18 - 24 months"
+    },
+    {
+      "id": "offering_005",
+      "offeringType": "service",
+      "name": "In-Clinic Teeth Whitening",
+      "price": "PHP 5,000 - PHP 8,000",
+      "description": "Professional bleaching treatment performed in the dental chair using a high-concentration whitening gel and light activation for immediate and noticeable results.",
+      "duration": "60 - 90 minutes"
+    },
+    {
+      "id": "offering_006",
+      "offeringType": "service",
+      "name": "Porcelain Dental Crown",
+      "price": "PHP 8,000 - PHP 15,000 per unit",
+      "description": "A custom-fitted tooth-shaped cap placed over a damaged or root canal-treated tooth to restore its shape, strength, and appearance. Porcelain crowns blend naturally with surrounding teeth.",
+      "duration": "2 visits approximately 1 week apart"
+    },
+    {
+      "id": "offering_007",
+      "offeringType": "service",
+      "name": "Root Canal Treatment",
+      "price": "PHP 5,000 - PHP 10,000 per tooth",
+      "description": "Procedure to remove infected or inflamed pulp tissue from inside the tooth, disinfect the root canals, and seal them to prevent reinfection. Preserves the natural tooth and relieves pain.",
+      "duration": "2 - 3 visits"
+    },
+    {
+      "id": "offering_008",
+      "offeringType": "service",
+      "name": "Dental Implant",
+      "price": "PHP 50,000 - PHP 80,000 per tooth",
+      "description": "A titanium screw surgically placed into the jawbone to serve as an artificial tooth root. Topped with an implant crown for a stable, natural-looking, and long-lasting tooth replacement.",
+      "duration": "3 - 6 months including osseointegration period"
+    },
+    {
+      "id": "offering_009",
+      "offeringType": "service",
+      "name": "Complete Removable Denture",
+      "price": "PHP 15,000 - PHP 25,000 per arch",
+      "description": "A full set of removable artificial teeth for patients who have lost all natural teeth in the upper or lower jaw. Custom-fabricated for a comfortable fit and functional bite.",
+      "duration": "Multiple visits over 3 - 4 weeks"
+    },
+    {
+      "id": "offering_010",
+      "offeringType": "service",
+      "name": "Dental Consultation",
+      "price": "PHP 300 - PHP 500",
+      "description": "Initial or follow-up visit with the dentist for oral examination, diagnosis, and treatment planning. The dentist will assess your dental concerns and recommend appropriate treatment.",
+      "duration": "20 - 30 minutes"
+    },
+    {
+      "id": "offering_011",
+      "offeringType": "service",
+      "name": "Periapical X-Ray",
+      "price": "PHP 150 - PHP 300 per film",
+      "description": "A dental radiograph showing the full length of one or more teeth from crown to root tip. Used to detect infections, bone loss, root abnormalities, and cysts.",
+      "duration": "10 - 15 minutes"
+    },
+    {
+      "id": "offering_012",
+      "offeringType": "service",
+      "name": "Hawley Retainer",
+      "price": "PHP 3,000 - PHP 5,000 per arch",
+      "description": "A removable orthodontic retainer made from acrylic and a wire clasp, worn after braces removal to maintain tooth alignment. Custom-fabricated based on an impression of the patient's teeth.",
+      "duration": "Ready for pick-up within 5 - 7 working days after impression"
+    }
+  ],
+  "policies": [
+    {
+      "id": "policy_001",
+      "category": "booking",
+      "title": "Appointment Booking Policy",
+      "description": "Appointments can be booked via phone call, SMS, Facebook Messenger, Viber, or our website booking form. A booking is confirmed only upon receiving a confirmation message from our staff. Walk-in patients are accommodated based on slot availability but will be queued after all scheduled appointments."
+    },
+    {
+      "id": "policy_002",
+      "category": "cancellation",
+      "title": "Appointment Cancellation Policy",
+      "description": "Patients must notify the clinic of any cancellation at least 24 hours before the scheduled appointment. Failure to provide advance notice may affect scheduling priority in future bookings. Repeated last-minute cancellations may require a booking deposit for subsequent appointments."
+    },
+    {
+      "id": "policy_003",
+      "category": "late_arrival",
+      "title": "Late Arrival Policy",
+      "description": "Patients who arrive more than 15 minutes after their scheduled appointment time may be rescheduled or placed at the end of the queue, subject to dentist availability. We encourage patients to arrive at least 10 minutes before their appointment to complete any necessary paperwork."
+    },
+    {
+      "id": "policy_004",
+      "category": "payment",
+      "title": "Payment Policy",
+      "description": "Full payment is due upon completion of the dental service. We accept cash, GCash, Maya, and credit or debit cards. Payments are non-transferable to other patients or services. Official receipts are issued for all transactions upon request."
+    },
+    {
+      "id": "policy_005",
+      "category": "child_patient",
+      "title": "Child Patient Policy",
+      "description": "Patients below 18 years of age must be accompanied by a parent or legal guardian during the full duration of the consultation and procedure. A signed parental consent form is required before any dental treatment is performed on a minor."
+    }
+  ],
+  "dentistProfiles": [
+    {
+      "id": "dentist_001",
+      "name": "Dr. Maria Santos",
+      "aliases": [
+        "Dra. Maria",
+        "Doc Maria",
+        "Dr. Santos"
+      ],
+      "specialization": "General Dentistry",
+      "bio": "Dr. Maria Santos is a licensed general dentist with over 10 years of clinical experience in comprehensive oral care. She handles routine check-ups, oral prophylaxis, tooth extractions, and composite fillings."
+    },
+    {
+      "id": "dentist_002",
+      "name": "Dr. Jose Reyes",
+      "aliases": [
+        "Doc Jose",
+        "Dr. Reyes",
+        "Doc Boy"
+      ],
+      "specialization": "Orthodontics",
+      "bio": "Dr. Jose Reyes is a licensed orthodontic specialist with extensive experience in metal braces, ceramic braces, and retainer management."
+    },
+    {
+      "id": "dentist_003",
+      "name": "Dr. Ana Lim",
+      "aliases": [
+        "Dra. Ana",
+        "Doc Ana",
+        "Dr. Lim"
+      ],
+      "specialization": "Endodontics",
+      "bio": "Dr. Ana Lim specializes in root canal treatments and the management of pulp-related dental diseases. She uses modern rotary endodontic instruments to ensure efficient and comfortable procedures. Dr. Lim also handles complex extractions and urgent dental pain cases."
+    }
+  ]
+}
