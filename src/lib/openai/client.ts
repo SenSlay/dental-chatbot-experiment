@@ -49,8 +49,7 @@ export function getOpenAIClient(): OpenAI {
     return openAIClient;
   }
 
-  const settings = getOpenAISettings();
-  openAIClient = new OpenAI({ apiKey: settings.apiKey });
+  openAIClient = new OpenAI({ apiKey: readRequiredEnv("OPENAI_API_KEY") });
 
   return openAIClient;
 }
