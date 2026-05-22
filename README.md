@@ -8,7 +8,7 @@ A local thesis experiment app for comparing Prompt Engineering and Retrieval-Aug
 - TypeScript
 - PostgreSQL
 - Prisma
-- OpenAI API
+- OpenAI Responses API
 
 ## Main Features
 
@@ -55,7 +55,7 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/dental_chatbot_exper
 
 OPENAI_API_KEY=""
 
-OPENAI_CHAT_MODEL="gpt-4o-mini"
+OPENAI_RESPONSE_MODEL="gpt-4o-mini"
 OPENAI_EMBEDDING_MODEL="text-embedding-3-large"
 
 RAG_TOP_K="5"

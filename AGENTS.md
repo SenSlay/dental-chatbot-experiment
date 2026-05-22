@@ -36,8 +36,8 @@ The application must support the thesis methodology:
   - technique
   - KB size
   - latency
-  - prompt tokens
-  - completion tokens
+  - input tokens
+  - output tokens
   - total tokens
   - retrieved context for RAG
 
@@ -49,7 +49,7 @@ Use:
 - TypeScript
 - PostgreSQL
 - Prisma
-- OpenAI API
+- OpenAI Responses API
 
 The app is local-only. Deployment is not required.
 

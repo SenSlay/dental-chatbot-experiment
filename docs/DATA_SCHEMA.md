@@ -202,10 +202,12 @@ assistantResponse
 technique            // prompt_engineering or rag
 kbSize               // 30, 100, 300
 latencyMs
-promptTokens
-completionTokens
+inputTokens
+outputTokens
 totalTokens
 retrievedContextJson // null for prompt_engineering
 error
 createdAt
 ```
+
+Token fields use OpenAI Responses API terminology. `inputTokens`, `outputTokens`, and `totalTokens` should map to the response `usage` values.

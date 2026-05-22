@@ -21,7 +21,7 @@ Required environment variables:
 ```txt
 DATABASE_URL=
 OPENAI_API_KEY=
-OPENAI_CHAT_MODEL=gpt-4o-mini
+OPENAI_RESPONSE_MODEL=gpt-4o-mini
 OPENAI_EMBEDDING_MODEL=text-embedding-3-large
 RAG_TOP_K=5
 EXPERIMENT_TEMPERATURE=0
@@ -85,9 +85,11 @@ Implement:
 
 Requirements:
 
-- Centralize OpenAI client creation.
-- Return assistant response and token usage.
+- Centralize OpenAI Responses API client creation.
+- Return assistant response and Responses API token usage.
 - Handle API errors safely.
+- Rename persisted token fields from `promptTokens` and `completionTokens` to `inputTokens` and `outputTokens` before experiment runs begin.
+- Use the same Responses API wrapper and response model for Prompt Engineering and RAG.
 
 ## Phase 6: Prompt Engineering Engine
 
@@ -110,8 +112,8 @@ Output:
 ```ts
 {
   assistantResponse,
-  promptTokens,
-  completionTokens,
+  inputTokens,
+  outputTokens,
   totalTokens
 }
 ```
@@ -139,6 +141,7 @@ Requirements:
 - Retrieve top 5 KB entries by cosine similarity.
 - Inject only retrieved entries into the prompt.
 - Save retrieved entries in result logs.
+- Return `inputTokens`, `outputTokens`, and `totalTokens` from the same Responses API wrapper used by Prompt Engineering mode.
 
 Use JSON embedding cache in:
 

@@ -141,8 +141,10 @@ Each generated response must save:
 - technique
 - KB size
 - latency
-- prompt tokens
-- completion tokens
+- input tokens
+- output tokens
 - total tokens
 - retrieved context for RAG
 - error, if any
+
+Token counts should come from the OpenAI Responses API `usage` object. `total tokens` should represent the reported total for the interaction.

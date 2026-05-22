@@ -1,6 +1,6 @@
 # Project Structure
 
-This project is a local thesis experiment runner built with Next.js App Router, TypeScript, Prisma, PostgreSQL, and the OpenAI API.
+This project is a local thesis experiment runner built with Next.js App Router, TypeScript, Prisma, PostgreSQL, and the OpenAI Responses API.
 
 This is the proposed file structure for the app.
 
