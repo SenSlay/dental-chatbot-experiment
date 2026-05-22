@@ -1,0 +1,902 @@
+[
+  {
+    "id": "scenario_001",
+    "category": "general_inquiry",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "What time does the clinic open?",
+        "expectedBehavior": "The assistant should provide the clinic's opening hours based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_002",
+    "category": "general_inquiry",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Where is the clinic located?",
+        "expectedBehavior": "The assistant should provide the clinic's address or location if available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_003",
+    "category": "general_inquiry",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Do you accept walk-in patients?",
+        "expectedBehavior": "The assistant should clarify the clinic's walk-in policy based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_004",
+    "category": "general_inquiry",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "What is your contact number?",
+        "expectedBehavior": "The assistant should provide the clinic's contact number based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_005",
+    "category": "general_inquiry",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Open po ba kayo ngayong Saturday?",
+        "expectedBehavior": "The assistant should provide the clinic's Saturday schedule based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_006",
+    "category": "general_inquiry",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "saan po kayo located? may parking ba?",
+        "expectedBehavior": "The assistant should provide the clinic's location and parking information if available in the selected KB; otherwise, it should state that the missing information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_007",
+    "category": "general_inquiry",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "anong oras po kayo nagbubukas?",
+        "expectedBehavior": "The assistant should provide the clinic's opening hours based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_008",
+    "category": "general_inquiry",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "pwede po bang walk-in d2?",
+        "expectedBehavior": "The assistant should clarify the clinic's walk-in policy based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_009",
+    "category": "general_inquiry",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "What are your clinic hours?",
+        "expectedBehavior": "The assistant should provide the clinic's operating hours based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Are you also open on Sundays?",
+        "expectedBehavior": "The assistant should provide Sunday availability based on the KB, understanding this is a follow-up about clinic hours."
+      }
+    ]
+  },
+  {
+    "id": "scenario_010",
+    "category": "general_inquiry",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "How can I contact the clinic?",
+        "expectedBehavior": "The assistant should provide the clinic's contact information based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Do you also have an email address?",
+        "expectedBehavior": "The assistant should provide the clinic's email address if available in the selected KB; otherwise, it should state that the email address is not available in the selected KB and avoid inventing details, while understanding this is a follow-up to the contact information question."
+      }
+    ]
+  },
+  {
+    "id": "scenario_011",
+    "category": "general_inquiry",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Open po ba kayo bukas?",
+        "expectedBehavior": "The assistant should confirm whether the clinic is open the following day based on the KB schedule."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Anong oras hanggang?",
+        "expectedBehavior": "The assistant should understand this is a follow-up asking about closing time and provide the clinic's closing hours based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_012",
+    "category": "general_inquiry",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Saan po kayo?",
+        "expectedBehavior": "The assistant should provide the clinic's location or address if available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Malapit lang ba sa MRT?",
+        "expectedBehavior": "The assistant should provide relevant landmark or transportation information if available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details, while preserving the prior location context."
+      }
+    ]
+  },
+  {
+    "id": "scenario_013",
+    "category": "service_question",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "How much is dental cleaning?",
+        "expectedBehavior": "The assistant should provide the price range for dental cleaning or oral prophylaxis based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_014",
+    "category": "service_question",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Do you offer teeth whitening?",
+        "expectedBehavior": "The assistant should confirm whether the clinic offers teeth whitening and provide relevant details based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_015",
+    "category": "service_question",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "How long does a tooth extraction usually take?",
+        "expectedBehavior": "The assistant should provide the typical duration for a tooth extraction based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_016",
+    "category": "service_question",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "What should I do after a tooth extraction?",
+        "expectedBehavior": "The assistant should provide aftercare instructions for tooth extraction if available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_017",
+    "category": "service_question",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Magkano po cleaning nyo?",
+        "expectedBehavior": "The assistant should provide the price range for dental cleaning or oral prophylaxis based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_018",
+    "category": "service_question",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "may braces kayo? magkano?",
+        "expectedBehavior": "The assistant should confirm whether the clinic offers orthodontic braces and provide the price range based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_019",
+    "category": "service_question",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "gaano katagal yung whitening?",
+        "expectedBehavior": "The assistant should provide the typical duration of a teeth whitening session based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_020",
+    "category": "service_question",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "ano po dapat gawin bago mag-extraction?",
+        "expectedBehavior": "The assistant should provide preparation instructions before a tooth extraction if available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_021",
+    "category": "service_question",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Do you offer dental veneers?",
+        "expectedBehavior": "The assistant should confirm whether the clinic offers dental veneers if that information is available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details."
+      },
+      {
+        "turn": 2,
+        "userMessage": "How much does it cost?",
+        "expectedBehavior": "The assistant should understand that 'it' refers to dental veneers and provide the price if available in the selected KB; otherwise, it should state that the price is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_022",
+    "category": "service_question",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I'm interested in teeth whitening.",
+        "expectedBehavior": "The assistant should provide relevant information about the teeth whitening service based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "How many sessions are needed?",
+        "expectedBehavior": "The assistant should understand the follow-up is about teeth whitening and provide the number of sessions typically required based on the KB."
+      },
+      {
+        "turn": 3,
+        "userMessage": "How long does each session take?",
+        "expectedBehavior": "The assistant should understand this is still about teeth whitening and provide the duration per session based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_023",
+    "category": "service_question",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "may retainer kayo?",
+        "expectedBehavior": "The assistant should confirm whether the clinic provides dental retainers based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "magkano po?",
+        "expectedBehavior": "The assistant should understand that the price question refers to retainers from the previous turn and provide the cost based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_024",
+    "category": "service_question",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Ano po pwede gawin pag may sirang ngipin?",
+        "expectedBehavior": "The assistant should describe relevant restorative services such as fillings, crowns, or extraction based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "yung filling po, magkano?",
+        "expectedBehavior": "The assistant should provide the price range for dental fillings based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_025",
+    "category": "appointment_booking",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I would like to book an appointment for dental cleaning this Friday.",
+        "expectedBehavior": "The assistant should acknowledge the booking request, confirm the service and date, and ask for any missing details or explain that availability needs to be confirmed by staff."
+      }
+    ]
+  },
+  {
+    "id": "scenario_026",
+    "category": "appointment_booking",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Can I schedule an appointment for tomorrow at 10 AM?",
+        "expectedBehavior": "The assistant should acknowledge the request and inform the user whether slots can be confirmed directly or if staff confirmation is needed, based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_027",
+    "category": "appointment_booking",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "How do I book an appointment with your clinic?",
+        "expectedBehavior": "The assistant should explain the appointment booking process based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_028",
+    "category": "appointment_booking",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Do you have available slots this Saturday afternoon?",
+        "expectedBehavior": "The assistant should indicate whether slots can be checked directly or if staff confirmation is required, and provide guidance based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_029",
+    "category": "appointment_booking",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "pa book po ng appointment bukas ng hapon",
+        "expectedBehavior": "The assistant should acknowledge the booking request for tomorrow afternoon and ask for any missing details or inform the user that availability will be confirmed by staff."
+      }
+    ]
+  },
+  {
+    "id": "scenario_030",
+    "category": "appointment_booking",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "may slot pa ba kayo tom morning?",
+        "expectedBehavior": "The assistant should acknowledge the availability question for tomorrow morning and indicate how slot confirmation works based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_031",
+    "category": "appointment_booking",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "gusto ko mag-appoint para sa cleaning, pano?",
+        "expectedBehavior": "The assistant should explain the appointment booking process for dental cleaning based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_032",
+    "category": "appointment_booking",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "available po ba kayo Sat ng 2pm? para sa whitening",
+        "expectedBehavior": "The assistant should acknowledge the request for a Saturday 2 PM whitening appointment and indicate how availability is confirmed based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_033",
+    "category": "appointment_booking",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I want to book an appointment.",
+        "expectedBehavior": "The assistant should ask for the needed booking details such as the preferred service, date, or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "For dental cleaning tomorrow afternoon.",
+        "expectedBehavior": "The assistant should understand the user wants to book dental cleaning for tomorrow afternoon, confirm the details, and ask for any remaining information or explain that availability needs to be confirmed by staff."
+      }
+    ]
+  },
+  {
+    "id": "scenario_034",
+    "category": "appointment_booking",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Can I book an appointment for teeth whitening?",
+        "expectedBehavior": "The assistant should acknowledge the request and ask for a preferred date or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "This Saturday at 3 PM.",
+        "expectedBehavior": "The assistant should understand the user wants a teeth whitening appointment this Saturday at 3 PM and confirm the details or explain how availability will be confirmed."
+      },
+      {
+        "turn": 3,
+        "userMessage": "How much will that cost?",
+        "expectedBehavior": "The assistant should understand that the cost question refers to teeth whitening and provide the price based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_035",
+    "category": "appointment_booking",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "pa appointment po sana.",
+        "expectedBehavior": "The assistant should acknowledge the appointment request and ask for the preferred service, date, or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Cleaning tom mga 3pm if meron.",
+        "expectedBehavior": "The assistant should understand the user is requesting a dental cleaning appointment tomorrow at around 3 PM, and acknowledge the request or explain that availability needs to be confirmed by staff."
+      }
+    ]
+  },
+  {
+    "id": "scenario_036",
+    "category": "appointment_booking",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "pede po mag-book ng appt?",
+        "expectedBehavior": "The assistant should confirm that booking is possible and ask for the needed details such as service, preferred date, or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "para sa extraction, dis Friday",
+        "expectedBehavior": "The assistant should understand the user wants a tooth extraction appointment this Friday and acknowledge the request, asking for any remaining details or explaining how confirmation works."
+      }
+    ]
+  },
+  {
+    "id": "scenario_037",
+    "category": "rescheduling_cancellation",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I need to reschedule my appointment to next Monday.",
+        "expectedBehavior": "The assistant should acknowledge the reschedule request and explain the rescheduling process or ask for the necessary details based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_038",
+    "category": "rescheduling_cancellation",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "How do I cancel my appointment?",
+        "expectedBehavior": "The assistant should explain the cancellation process based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_039",
+    "category": "rescheduling_cancellation",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Is there a cancellation fee if I cancel my appointment?",
+        "expectedBehavior": "The assistant should clarify the clinic's cancellation fee or cancellation policy if available in the selected KB; otherwise, it should state that fee information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_040",
+    "category": "rescheduling_cancellation",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "What happens if I miss my appointment?",
+        "expectedBehavior": "The assistant should explain the clinic's no-show policy if available in the selected KB; otherwise, it should state that the no-show policy is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_041",
+    "category": "rescheduling_cancellation",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Pwede pa resched ng appointment ko?",
+        "expectedBehavior": "The assistant should acknowledge the rescheduling request and explain how to proceed based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_042",
+    "category": "rescheduling_cancellation",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "kailangan ko i-cancel appt ko bukas, paano?",
+        "expectedBehavior": "The assistant should explain the cancellation process for an appointment based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_043",
+    "category": "rescheduling_cancellation",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "may bayad ba pag cancel ng appt?",
+        "expectedBehavior": "The assistant should clarify the clinic's cancellation fee policy if available in the selected KB; otherwise, it should state that cancellation fee information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_044",
+    "category": "rescheduling_cancellation",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "anong mangyayari pag hindi ko natuloy appointment ko?",
+        "expectedBehavior": "The assistant should explain the clinic's no-show or missed appointment policy if available in the selected KB; otherwise, it should state that the information is not available in the selected KB and avoid inventing details."
+      }
+    ]
+  },
+  {
+    "id": "scenario_045",
+    "category": "rescheduling_cancellation",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I want to reschedule my appointment.",
+        "expectedBehavior": "The assistant should acknowledge the request and ask for the new preferred date or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Can I move it to Friday at 10 AM?",
+        "expectedBehavior": "The assistant should understand the user wants to reschedule to Friday at 10 AM and confirm the request or explain how the reschedule will be processed based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_046",
+    "category": "rescheduling_cancellation",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I want to reschedule my appointment.",
+        "expectedBehavior": "The assistant should acknowledge the request and ask for the new preferred date or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "This Friday at 10 AM.",
+        "expectedBehavior": "The assistant should confirm the reschedule request for Friday at 10 AM and explain how it will be processed based on the KB."
+      },
+      {
+        "turn": 3,
+        "userMessage": "Actually, can I move it to Monday instead?",
+        "expectedBehavior": "The assistant should understand the user wants to change from Friday to Monday and update the reschedule request accordingly."
+      }
+    ]
+  },
+  {
+    "id": "scenario_047",
+    "category": "rescheduling_cancellation",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Gusto ko pa resched ng appt ko.",
+        "expectedBehavior": "The assistant should acknowledge the reschedule request and ask for the new preferred date or time."
+      },
+      {
+        "turn": 2,
+        "userMessage": "Puwede ba sa Lunes ng umaga?",
+        "expectedBehavior": "The assistant should understand the user wants to reschedule to Monday morning and confirm the request or explain the reschedule process based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_048",
+    "category": "rescheduling_cancellation",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "cancel ko na lang appointment ko.",
+        "expectedBehavior": "The assistant should acknowledge the cancellation intent and explain the cancellation process or any relevant policies based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "may bayad ba?",
+        "expectedBehavior": "The assistant should understand the user is asking about a cancellation fee and provide the relevant policy if available in the selected KB; otherwise, it should state that cancellation fee information is not available in the selected KB and avoid inventing details, while preserving the prior cancellation context."
+      }
+    ]
+  },
+  {
+    "id": "scenario_049",
+    "category": "ambiguous_query",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "How much?",
+        "expectedBehavior": "The assistant should recognize the query is incomplete with no prior context and ask a clarification question about which service the user is referring to."
+      }
+    ]
+  },
+  {
+    "id": "scenario_050",
+    "category": "ambiguous_query",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Available tomorrow?",
+        "expectedBehavior": "The assistant should recognize the query is vague and ask a clarification question, such as what service or appointment the user is inquiring about."
+      }
+    ]
+  },
+  {
+    "id": "scenario_051",
+    "category": "ambiguous_query",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Do you have that?",
+        "expectedBehavior": "The assistant should recognize that there is no prior context and ask the user to clarify what service or item they are referring to."
+      }
+    ]
+  },
+  {
+    "id": "scenario_052",
+    "category": "ambiguous_query",
+    "inputType": "clean",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Cleaning?",
+        "expectedBehavior": "The assistant should interpret the single-word query and provide information about dental cleaning, or ask a clarifying question if more context is needed."
+      }
+    ]
+  },
+  {
+    "id": "scenario_053",
+    "category": "ambiguous_query",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "hm po?",
+        "expectedBehavior": "The assistant should recognize there is no prior context and ask a clarification question about what the user would like to know the price of."
+      }
+    ]
+  },
+  {
+    "id": "scenario_054",
+    "category": "ambiguous_query",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "meron ba?",
+        "expectedBehavior": "The assistant should recognize the query is too vague with no prior context and ask for clarification about what service or item the user is inquiring about."
+      }
+    ]
+  },
+  {
+    "id": "scenario_055",
+    "category": "ambiguous_query",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "tom?",
+        "expectedBehavior": "The assistant should recognize the message is unclear and ask the user to clarify what they want to know about tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "scenario_056",
+    "category": "ambiguous_query",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": false,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "pano po?",
+        "expectedBehavior": "The assistant should recognize the query lacks context and ask the user to clarify what process or information they need help with."
+      }
+    ]
+  },
+  {
+    "id": "scenario_057",
+    "category": "ambiguous_query",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "Do you offer dental cleaning?",
+        "expectedBehavior": "The assistant should confirm whether the clinic offers dental cleaning based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "How much?",
+        "expectedBehavior": "The assistant should understand from the previous turn that the user is asking about the price of dental cleaning and provide the cost based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_058",
+    "category": "ambiguous_query",
+    "inputType": "clean",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "I'm thinking about getting braces.",
+        "expectedBehavior": "The assistant should provide relevant information about orthodontic braces offered by the clinic based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "How long does it usually take?",
+        "expectedBehavior": "The assistant should understand that 'it' refers to braces treatment and provide the typical treatment duration based on the KB."
+      },
+      {
+        "turn": 3,
+        "userMessage": "And the price?",
+        "expectedBehavior": "The assistant should understand the user is still asking about braces and provide the cost based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_059",
+    "category": "ambiguous_query",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "May cleaning kayo?",
+        "expectedBehavior": "The assistant should confirm whether the clinic offers dental cleaning or oral prophylaxis based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "hm po?",
+        "expectedBehavior": "The assistant should understand from the previous turn that the user is asking about the price of dental cleaning and provide the cost based on the KB."
+      }
+    ]
+  },
+  {
+    "id": "scenario_060",
+    "category": "ambiguous_query",
+    "inputType": "noisy_taglish",
+    "isMultiTurn": true,
+    "turns": [
+      {
+        "turn": 1,
+        "userMessage": "gusto ko sana mag-pa whitening.",
+        "expectedBehavior": "The assistant should provide relevant information about the teeth whitening service based on the KB."
+      },
+      {
+        "turn": 2,
+        "userMessage": "available ba tom?",
+        "expectedBehavior": "The assistant should understand the user is asking about tomorrow's availability for whitening and respond based on the KB's availability or confirmation policy."
+      }
+    ]
+  }
+]
