@@ -93,3 +93,21 @@ export type EngineTurnResult = {
   totalTokens: number;
   retrievedContext?: RetrievedKbEntry[];
 };
+
+export type ListExperimentRunsFilters = {
+  runType?: RunType;
+  status?: RunStatus;
+  isFinalAnalysis?: boolean;
+};
+
+export type ListExperimentResultsFilters = {
+  experimentRunId?: string;
+  technique?: Technique;
+  kbSize?: KbSize;
+  scenarioCategory?: string;
+  inputType?: string;
+  scenarioId?: string;
+  hasError?: boolean;
+  limit?: number;
+  offset?: number;
+};

@@ -196,6 +196,7 @@ Create:
 
 - `src/app/api/experiments/run/route.ts`
 - `src/app/api/experiments/route.ts`
+- `src/app/api/experiments/final-analysis/route.ts`
 - `src/app/api/results/route.ts`
 - `src/app/api/export/route.ts`
 
@@ -203,6 +204,7 @@ API behavior:
 
 - `/api/experiments/run` starts a pilot or official experiment run.
 - `/api/experiments` lists experiment runs.
+- `/api/experiments/final-analysis` marks one completed official run as the final analysis run.
 - `/api/results` lists experiment results with filters.
 - `/api/export` exports results to CSV.
 

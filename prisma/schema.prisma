@@ -36,6 +36,7 @@ model ExperimentRun {
   maxOutputTokens     Int
   scenarioFileVersion String?
   notes               String?
+  isFinalAnalysis     Boolean            @default(false)
   startedAt           DateTime?
   completedAt         DateTime?
   createdAt           DateTime           @default(now())
