@@ -184,6 +184,7 @@ Requirements:
 - Support selected KB size or all KB sizes.
 - Support selected technique or both techniques.
 - Support selected scenario or all scenarios.
+- Require official runs to use all KB sizes, both techniques, and all 60 scenarios.
 - Generate assistant response for every user turn.
 - Append generated assistant responses to conversation history.
 - Log each generated assistant response.
