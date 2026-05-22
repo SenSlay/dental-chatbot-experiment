@@ -34,9 +34,8 @@ Create models:
 
 - `ExperimentRun`
 - `ExperimentResult`
-- `Evaluation`
 
-The `Evaluation` model can be created now, but evaluation UI should be implemented later.
+Do not create `Evaluation` yet. The evaluation rubric is not finalized, so the model should be added in a later phase when the rubric is stable.
 
 ## Phase 3: Dataset Loading
 
@@ -214,4 +213,4 @@ Results page:
 
 Do not build evaluation UI yet.
 
-Keep the `Evaluation` model ready for the rubric in `docs/EVALUATION_GUIDE.md`.
+Add the `Evaluation` model later when the rubric in `docs/EVALUATION_GUIDE.md` is finalized.

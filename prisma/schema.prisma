@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RunType {
+  PILOT
+  OFFICIAL
+}
+
+enum RunStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+enum Technique {
+  PROMPT_ENGINEERING
+  RAG
+}
+
+model ExperimentRun {
+  id                  String             @id @default(cuid())
+  name                String
+  runType             RunType
+  status              RunStatus          @default(PENDING)
+  model               String
+  embeddingModel      String
+  ragTopK             Int
+  temperature         Float
+  maxOutputTokens     Int
+  scenarioFileVersion String?
+  notes               String?
+  startedAt           DateTime?
+  completedAt         DateTime?
+  createdAt           DateTime           @default(now())
+  updatedAt           DateTime           @updatedAt
+  results             ExperimentResult[]
+}
+
+model ExperimentResult {
+  id                   String        @id @default(cuid())
+  experimentRunId      String
+  experimentRun        ExperimentRun @relation(fields: [experimentRunId], references: [id], onDelete: Cascade)
+  scenarioId           String
+  scenarioCategory     String
+  inputType            String
+  isMultiTurn          Boolean
+  turnNumber           Int
+  userMessage          String
+  expectedBehavior     String
+  assistantResponse    String?
+  technique            Technique
+  kbSize               Int
+  latencyMs            Int?
+  promptTokens         Int?
+  completionTokens     Int?
+  totalTokens          Int?
+  retrievedContextJson Json?
+  error                String?
+  createdAt            DateTime      @default(now())
+
+  @@index([experimentRunId])
+  @@index([scenarioId])
+  @@index([technique, kbSize])
+  @@index([scenarioCategory, inputType])
+}
