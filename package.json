@@ -9,7 +9,9 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "validate:kb": "tsx scripts/validate-kb.ts",
-    "validate:kb-format": "tsx scripts/validate-kb-format.ts"
+    "validate:kb-format": "tsx scripts/validate-kb-format.ts",
+    "validate:scenarios": "tsx scripts/validate-scenarios.ts",
+    "validate:data": "npm run validate:kb && npm run validate:kb-format && npm run validate:scenarios"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",

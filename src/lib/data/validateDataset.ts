@@ -6,9 +6,21 @@ import type {
   OfferingEntry,
   PolicyEntry,
 } from "@/types/kb";
+import {
+  SCENARIO_CATEGORIES,
+  SCENARIO_INPUT_TYPES,
+  type Scenario,
+  type ScenarioCategory,
+  type ScenarioInputType,
+  type ScenarioTurn,
+} from "@/types/scenario";
 
 type ValidateKbOptions = {
   kbSize: KbSize;
+  filePath: string;
+};
+
+type ValidateScenarioOptions = {
   filePath: string;
 };
 
@@ -18,6 +30,22 @@ const KB_TOP_LEVEL_KEYS = [
   "policies",
   "dentistProfiles",
 ] as const;
+
+const SCENARIO_REQUIRED_KEYS = [
+  "id",
+  "category",
+  "inputType",
+  "isMultiTurn",
+  "turns",
+] as const;
+
+const SCENARIO_TURN_KEYS = [
+  "expectedBehavior",
+  "turn",
+  "userMessage",
+] as const;
+
+const OFFICIAL_SCENARIO_COUNT = 60;
 
 function fail(filePath: string, message: string): never {
   throw new Error(`[${filePath}] ${message}`);
@@ -54,6 +82,20 @@ function requireArray(
   }
 
   return value;
+}
+
+function validateExactKeys(
+  value: Record<string, unknown>,
+  allowedKeys: readonly string[],
+  context: string,
+  filePath: string,
+): void {
+  const keys = Object.keys(value).sort();
+  const expectedKeys = [...allowedKeys].sort();
+
+  if (JSON.stringify(keys) !== JSON.stringify(expectedKeys)) {
+    fail(filePath, `${context}: keys must be exactly ${allowedKeys.join(", ")}`);
+  }
 }
 
 function validateFaq(
@@ -241,4 +283,166 @@ export function validateKbDataset(
   validateUniqueIds(kb, filePath);
 
   return kb;
+}
+
+function validateScenarioCategory(
+  value: string,
+  context: string,
+  filePath: string,
+): ScenarioCategory {
+  if (!SCENARIO_CATEGORIES.includes(value as ScenarioCategory)) {
+    fail(
+      filePath,
+      `${context}: category must be one of ${SCENARIO_CATEGORIES.join(", ")}`,
+    );
+  }
+
+  return value as ScenarioCategory;
+}
+
+function validateScenarioInputType(
+  value: string,
+  context: string,
+  filePath: string,
+): ScenarioInputType {
+  if (!SCENARIO_INPUT_TYPES.includes(value as ScenarioInputType)) {
+    fail(
+      filePath,
+      `${context}: inputType must be one of ${SCENARIO_INPUT_TYPES.join(", ")}`,
+    );
+  }
+
+  return value as ScenarioInputType;
+}
+
+function validateScenarioTurn(
+  value: unknown,
+  index: number,
+  scenarioContext: string,
+  filePath: string,
+): ScenarioTurn {
+  const context = `${scenarioContext}.turns[${index}]`;
+
+  if (!isRecord(value)) {
+    fail(filePath, `${context}: turn must be an object`);
+  }
+
+  validateExactKeys(value, SCENARIO_TURN_KEYS, context, filePath);
+
+  if (value.turn !== index + 1) {
+    fail(filePath, `${context}: turn must be ${index + 1}`);
+  }
+
+  return {
+    turn: value.turn,
+    userMessage: requireString(value, "userMessage", context, filePath),
+    expectedBehavior: requireString(
+      value,
+      "expectedBehavior",
+      context,
+      filePath,
+    ),
+  };
+}
+
+function validateScenario(
+  value: unknown,
+  index: number,
+  filePath: string,
+): Scenario {
+  const baseContext = `scenarios[${index}]`;
+
+  if (!isRecord(value)) {
+    fail(filePath, `${baseContext}: scenario must be an object`);
+  }
+
+  validateExactKeys(value, SCENARIO_REQUIRED_KEYS, baseContext, filePath);
+
+  const id = requireString(value, "id", baseContext, filePath);
+  const context = `${baseContext} ${id}`;
+  const category = validateScenarioCategory(
+    requireString(value, "category", context, filePath),
+    context,
+    filePath,
+  );
+  const inputType = validateScenarioInputType(
+    requireString(value, "inputType", context, filePath),
+    context,
+    filePath,
+  );
+  const isMultiTurn = value.isMultiTurn;
+  const turns = value.turns;
+
+  if (typeof isMultiTurn !== "boolean") {
+    fail(filePath, `${context}: isMultiTurn must be a boolean`);
+  }
+
+  if (!Array.isArray(turns)) {
+    fail(filePath, `${context}: turns must be an array`);
+  }
+
+  if (!isMultiTurn && turns.length !== 1) {
+    fail(filePath, `${context}: single-turn scenarios must have exactly one turn`);
+  }
+
+  if (isMultiTurn && turns.length <= 1) {
+    fail(filePath, `${context}: multi-turn scenarios must have more than one turn`);
+  }
+
+  return {
+    id,
+    category,
+    inputType,
+    isMultiTurn,
+    turns: turns.map((turn, turnIndex) =>
+      validateScenarioTurn(turn, turnIndex, context, filePath),
+    ),
+  };
+}
+
+function validateUniqueScenarioIds(scenarios: Scenario[], filePath: string): void {
+  const seen = new Map<string, string>();
+
+  scenarios.forEach((scenario, index) => {
+    const previous = seen.get(scenario.id);
+
+    if (previous) {
+      fail(
+        filePath,
+        `scenarios[${index}] ${scenario.id}: duplicate id already used by ${previous}`,
+      );
+    }
+
+    seen.set(scenario.id, `scenarios[${index}]`);
+  });
+}
+
+export function getScenarioTurnCount(scenarios: Scenario[]): number {
+  return scenarios.reduce((total, scenario) => total + scenario.turns.length, 0);
+}
+
+export function validateScenarioDataset(
+  data: unknown,
+  options: ValidateScenarioOptions,
+): Scenario[] {
+  const { filePath } = options;
+
+  if (!Array.isArray(data)) {
+    fail(filePath, "scenario dataset must be a JSON array");
+  }
+
+  if (data.length !== OFFICIAL_SCENARIO_COUNT) {
+    fail(
+      filePath,
+      `expected ${OFFICIAL_SCENARIO_COUNT} scenarios, found ${data.length}`,
+    );
+  }
+
+  const scenarios = data.map((scenario, index) =>
+    validateScenario(scenario, index, filePath),
+  );
+
+  validateUniqueScenarioIds(scenarios, filePath);
+
+  return scenarios;
 }
