@@ -23,6 +23,22 @@ If evaluators disagree, they should review the response jointly and record a con
 
 Pilot runs may be evaluated informally for debugging, but pilot evaluations should not be mixed with official results.
 
+Evaluation should be performed on the single completed official run selected as the final analysis run. Failed, incomplete, or superseded official runs should be preserved but excluded from thesis analysis.
+
+Before evaluation UI is implemented, export the final analysis run to CSV and evaluate responses in a spreadsheet or external analysis tool.
+
+The exported CSV should provide the raw generated responses and metadata needed for the thesis Results and Discussion chapters. Evaluators should add scoring columns such as:
+
+```txt
+accuracyScore
+hallucination
+contextRetentionScore
+evaluatorName
+evaluationNotes
+```
+
+After scoring, aggregate results by technique, KB size, scenario category, and input type. These aggregates should be used to discuss factual accuracy, hallucination rate, token usage, latency, scalability, robustness, and contextual consistency.
+
 ## Planned Evaluation Fields
 
 Each generated assistant response will later be evaluated using:

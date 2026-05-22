@@ -42,6 +42,8 @@ The app must support:
 ### Scenario Count
 
 - 60 fixed scenarios for official experiment runs
+- 84 total user turns across the fixed scenario set
+- 504 generated assistant responses for one complete official run across 3 KB sizes and 2 techniques
 
 ## Core Features
 
@@ -67,6 +69,8 @@ The runner should allow:
 
 Official runs should validate that the scenario file contains exactly 60 scenarios.
 
+Official runs should use all KB sizes, both techniques, and all scenarios. Pilot runs may use selected KB sizes, techniques, or scenarios for debugging.
+
 ### Prompt Engineering Engine
 
 Uses the full selected KB in the prompt.
@@ -79,17 +83,29 @@ Uses embeddings and cosine similarity to retrieve the top 5 relevant KB entries 
 
 Every generated assistant response should be saved to the database with metadata.
 
+Official runs should never be overwritten or deleted. If more than one official run exists, exactly one completed official run should be selected as the final analysis run.
+
 ### Results Page
 
 The app should provide a page to:
 
 - view experiment runs
 - view generated responses
+- identify the official run selected for final analysis
 - filter by technique
 - filter by KB size
 - filter by scenario category
 - filter by input type
+- inspect RAG retrieved context
 - export results to CSV
+
+The CSV export should support later manual evaluation and thesis analysis by including run metadata, scenario metadata, generated response text, expected behavior, technique, KB size, latency, token usage, retrieved context, errors, and timestamps.
+
+### Defense Demo
+
+Use pilot runs for live demonstrations.
+
+The app should not require running a fresh official experiment during thesis defense. A defense demo should use a small pilot run and may show an already completed official run in the results page.
 
 ## Non-Goals
 

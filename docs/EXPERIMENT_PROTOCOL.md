@@ -50,6 +50,15 @@ x 2 techniques
 
 Because multi-turn scenarios contain multiple user turns, the number of generated responses may be higher than 360. Every generated assistant response should be logged.
 
+The official scenario set currently contains 84 total user turns. A complete official run therefore produces:
+
+```txt
+84 generated turns
+x 3 KB sizes
+x 2 techniques
+= 504 generated assistant responses
+```
+
 The fixed 60-scenario set is a project-level experiment decision and must be reused across all conditions.
 
 ## Execution Loop
@@ -125,6 +134,17 @@ For the first implementation, retain all previous turns within the current scena
 - Do not delete raw results.
 - Do not overwrite official results.
 - If something breaks, mark the run as failed and create a new official run after fixing the issue.
+- Preserve failed or invalid official runs, but exclude them from final analysis.
+- Select exactly one completed official run as the final analysis run for the thesis.
+- Record which official run is used for final analysis in thesis notes or analysis files.
+
+## Defense Demo Policy
+
+Use pilot runs for thesis defense demonstrations.
+
+Do not run a fresh official run during a live demo. Official runs are research data and should be generated only after datasets, prompts, model settings, logging, and pilot checks are finalized.
+
+A demo pilot run should be small, such as one scenario, one KB size, and one technique. If demonstrating RAG, prepare embeddings before the demo when possible.
 
 ## Output Requirements
 
@@ -148,3 +168,17 @@ Each generated response must save:
 - error, if any
 
 Token counts should come from the OpenAI Responses API `usage` object. `total tokens` should represent the reported total for the interaction.
+
+## Export Requirements
+
+CSV export should use one row per generated assistant response.
+
+The export should include:
+
+- run metadata: run ID, run name, run type, status, model, embedding model, RAG top-k, temperature, max output tokens
+- scenario metadata: scenario ID, category, input type, multi-turn flag, turn number
+- response data: user message, expected behavior, assistant response, technique, KB size
+- metrics: latency, input tokens, output tokens, total tokens
+- RAG context: retrieved context JSON
+- error, if any
+- timestamps
