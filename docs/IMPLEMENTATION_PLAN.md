@@ -95,6 +95,8 @@ Requirements:
 
 Implement:
 
+- `src/lib/prompts/systemPrompt.ts`
+- `src/lib/prompts/promptEngineeringPrompt.ts`
 - `src/lib/engines/promptEngineeringEngine.ts`
 
 Input:
