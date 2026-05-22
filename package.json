@@ -8,7 +8,8 @@
     "start": "next start",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "validate:kb": "tsx scripts/validate-kb.ts"
+    "validate:kb": "tsx scripts/validate-kb.ts",
+    "validate:kb-format": "tsx scripts/validate-kb-format.ts"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",
