@@ -9,6 +9,7 @@ dist/
 build/
 
 data/embeddings/
+exports/
 
 *.log
 npm-debug.log*

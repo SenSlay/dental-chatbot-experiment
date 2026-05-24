@@ -17,6 +17,7 @@
     "validate:experiment-runner": "tsx scripts/validate-experiment-runner.ts",
     "validate:api": "tsx scripts/validate-api.ts",
     "validate:analysis": "tsx scripts/validate-analysis.ts",
+    "mock:evaluations": "tsx scripts/mock-evaluations.ts",
     "smoke:db": "node --env-file-if-exists=.env --import tsx scripts/smoke-db.ts",
     "prepare:embeddings": "node --env-file-if-exists=.env --import tsx scripts/prepare-embeddings.ts",
     "validate:data": "npm run validate:kb && npm run validate:kb-format && npm run validate:scenarios"
