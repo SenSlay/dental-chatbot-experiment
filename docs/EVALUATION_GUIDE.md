@@ -1,6 +1,6 @@
 # Evaluation Guide
 
-Status: Planned for later implementation.
+Status: Evaluation is performed in Google Sheets, then imported into the app for analysis.
 
 The experiment runner should be completed before evaluation UI is built.
 
@@ -25,33 +25,46 @@ Pilot runs may be evaluated informally for debugging, but pilot evaluations shou
 
 Evaluation should be performed on the single completed official run selected as the final analysis run. Failed, incomplete, or superseded official runs should be preserved but excluded from thesis analysis.
 
-Before evaluation UI is implemented, export the final analysis run to CSV and evaluate responses in a spreadsheet or external analysis tool.
+Export the final analysis run to CSV and evaluate responses in Google Sheets or another spreadsheet tool. After scoring is complete, export the evaluated sheet back to CSV and import it into the app's Analysis page.
 
-The exported CSV should provide the raw generated responses and metadata needed for the thesis Results and Discussion chapters. Evaluators should add scoring columns such as:
+The exported CSV provides the raw generated responses and metadata needed for the thesis Results and Discussion chapters. Evaluators should add these exact scoring columns:
 
 ```txt
-accuracyScore
-hallucination
-contextRetentionScore
-evaluatorName
-evaluationNotes
+evaluator1AccuracyScore
+evaluator1Hallucination
+evaluator1ContextRetentionScore
+evaluator1Notes
+evaluator2AccuracyScore
+evaluator2Hallucination
+evaluator2ContextRetentionScore
+evaluator2Notes
+consensusAccuracyScore
+consensusHallucination
+consensusContextRetentionScore
+consensusNotes
 ```
 
-After scoring, aggregate results by technique, KB size, scenario category, and input type. These aggregates should be used to discuss factual accuracy, hallucination rate, token usage, latency, scalability, robustness, and contextual consistency.
+Evaluators should score independently in their own columns first. If their scores conflict, they should review the row together and record the agreed final values in the consensus columns.
 
-## Planned Evaluation Fields
+After scoring, import the evaluated CSV into the Analysis page. The app uses the consensus columns to aggregate results by technique, KB size, scenario category, input type, and single-turn/multi-turn structure. These aggregates should be used to discuss factual accuracy, hallucination rate, token usage, latency, scalability, robustness, and contextual consistency.
 
-Each generated assistant response will later be evaluated using:
+## Evaluation Fields
+
+Each generated assistant response should be evaluated using:
 
 ```txt
-experimentResultId
-evaluatorName
-accuracyScore: 0 | 1 | 2
-hallucination: true | false
-contextRetentionScore: 0 | 1 | 2 | null
-notes
-createdAt
-updatedAt
+evaluator1AccuracyScore: 0 | 1 | 2
+evaluator1Hallucination: true | false
+evaluator1ContextRetentionScore: 0 | 1 | 2 | blank
+evaluator1Notes
+evaluator2AccuracyScore: 0 | 1 | 2
+evaluator2Hallucination: true | false
+evaluator2ContextRetentionScore: 0 | 1 | 2 | blank
+evaluator2Notes
+consensusAccuracyScore: 0 | 1 | 2
+consensusHallucination: true | false
+consensusContextRetentionScore: 0 | 1 | 2 | blank
+consensusNotes
 ```
 
 ## Accuracy Score

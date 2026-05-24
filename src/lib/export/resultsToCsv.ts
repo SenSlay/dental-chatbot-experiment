@@ -31,6 +31,18 @@ const CSV_HEADERS = [
   "runCreatedAt",
   "runStartedAt",
   "runCompletedAt",
+  "evaluator1AccuracyScore",
+  "evaluator1Hallucination",
+  "evaluator1ContextRetentionScore",
+  "evaluator1Notes",
+  "evaluator2AccuracyScore",
+  "evaluator2Hallucination",
+  "evaluator2ContextRetentionScore",
+  "evaluator2Notes",
+  "consensusAccuracyScore",
+  "consensusHallucination",
+  "consensusContextRetentionScore",
+  "consensusNotes",
 ] as const;
 
 function csvEscape(value: unknown): string {
@@ -87,6 +99,18 @@ function rowToValues(row: ExperimentResultWithRun): unknown[] {
     row.experimentRun.createdAt,
     row.experimentRun.startedAt,
     row.experimentRun.completedAt,
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
   ];
 }
 

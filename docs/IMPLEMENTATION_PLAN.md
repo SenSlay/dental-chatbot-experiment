@@ -235,8 +235,19 @@ Results page:
 - View retrieved context for RAG.
 - Export CSV.
 
-## Phase 11: Evaluation Later
+## Phase 11: Analysis Import
 
-Do not build evaluation UI yet.
+Create:
 
-Add the `Evaluation` model later when the rubric in `docs/EVALUATION_GUIDE.md` is finalized.
+- `src/app/analysis/page.tsx`
+- analysis utilities for evaluated CSV parsing and aggregation
+
+Requirements:
+
+- Import an evaluated CSV exported from Google Sheets.
+- Validate required original experiment columns and consensus scoring columns.
+- Use consensus scores for final analysis.
+- Show aggregate tables for overall performance, technique, KB size, input type, scenario category, and single-turn/multi-turn structure.
+- Show Prompt Engineering vs RAG comparison tables.
+- Export aggregate and comparison CSV summaries.
+- Do not add database-backed evaluation models yet.

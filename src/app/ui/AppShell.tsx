@@ -16,6 +16,7 @@ export function AppShell({ children }: AppShellProps) {
         <nav className="top-nav" aria-label="Primary navigation">
           <Link href="/experiments">Experiments</Link>
           <Link href="/results">Results</Link>
+          <Link href="/analysis">Analysis</Link>
         </nav>
       </header>
       {children}

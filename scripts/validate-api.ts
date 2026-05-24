@@ -114,6 +114,14 @@ function validateCsvEscaping(): void {
   assert(csv.includes('"Answer with ""clinic"" info."'), "CSV should escape quotes");
   assert(csv.includes('"Line 1\nLine 2"'), "CSV should escape newlines");
   assert(csv.includes('"[{""id"":""faq_001"",""text"":""A,B""}]"'), "CSV should escape JSON");
+  assert(
+    csv.includes("evaluator1AccuracyScore"),
+    "CSV should include evaluator scoring columns",
+  );
+  assert(
+    csv.includes("consensusContextRetentionScore"),
+    "CSV should include consensus scoring columns",
+  );
 }
 
 async function validateRequestValidation(): Promise<void> {
