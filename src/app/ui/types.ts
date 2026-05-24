@@ -60,3 +60,12 @@ export type ResultsPayload = {
   limit: number | null;
   offset: number | null;
 };
+
+export type ScenarioSummary = {
+  id: string;
+  category: string;
+  inputType: string;
+  isMultiTurn: boolean;
+  turnCount: number;
+  firstUserMessage: string;
+};

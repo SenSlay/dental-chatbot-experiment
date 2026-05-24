@@ -3,6 +3,7 @@ import {
   parseExperimentResultFilters,
   parseRunRequestBody,
 } from "../src/lib/api/query";
+import { GET as getScenarios } from "../src/app/api/scenarios/route";
 import { errorResponse } from "../src/lib/api/json";
 import { markFinalAnalysisRun } from "../src/lib/experiment/queries";
 import { resultsToCsv } from "../src/lib/export/resultsToCsv";
@@ -210,12 +211,36 @@ async function validateErrorResponses(): Promise<void> {
   );
 }
 
+async function validateScenarioApi(): Promise<void> {
+  const response = await getScenarios();
+  const body = await response.json();
+
+  assert(Array.isArray(body.data), "Scenario API should return data array");
+  assert(body.data.length === 60, "Scenario API should return 60 scenarios");
+
+  const firstScenario = body.data[0];
+  assert(firstScenario.id === "scenario_001", "Scenario API should preserve order");
+  assert(typeof firstScenario.category === "string", "Scenario category should exist");
+  assert(typeof firstScenario.inputType === "string", "Scenario input type should exist");
+  assert(
+    typeof firstScenario.isMultiTurn === "boolean",
+    "Scenario structure flag should exist",
+  );
+  assert(typeof firstScenario.turnCount === "number", "Scenario turn count should exist");
+  assert(
+    typeof firstScenario.firstUserMessage === "string" &&
+      firstScenario.firstUserMessage.length > 0,
+    "Scenario preview should exist",
+  );
+}
+
 async function main() {
   validateQueryParsing();
   validateCsvEscaping();
   await validateRequestValidation();
   await validateFinalAnalysisSelection();
   await validateErrorResponses();
+  await validateScenarioApi();
   console.log("Validated API parsing, CSV export, and final-analysis rules");
 }
 

@@ -12,12 +12,21 @@ import type {
   ExperimentRunSummary,
   RunStatus,
   RunType,
+  ScenarioSummary,
   Technique,
 } from "@/app/ui/types";
 
 const KB_SIZES = [30, 100, 300] as const;
 const TECHNIQUES: Technique[] = ["PROMPT_ENGINEERING", "RAG"];
 const RUN_STATUSES: RunStatus[] = ["PENDING", "RUNNING", "COMPLETED", "FAILED"];
+const SCENARIO_CATEGORIES = [
+  "general_inquiry",
+  "service_question",
+  "appointment_booking",
+  "rescheduling_cancellation",
+  "ambiguous_query",
+];
+const SCENARIO_INPUT_TYPES = ["clean", "noisy_taglish"];
 
 type RunFilters = {
   runType: "" | RunType;
@@ -30,8 +39,15 @@ type RunForm = {
   runType: RunType;
   kbSizes: number[];
   techniques: Technique[];
-  scenarioIds: string;
+  scenarioIds: string[];
   notes: string;
+};
+
+type ScenarioPickerFilters = {
+  category: string;
+  inputType: string;
+  structure: "" | "single" | "multi";
+  search: string;
 };
 
 const defaultForm: RunForm = {
@@ -39,8 +55,15 @@ const defaultForm: RunForm = {
   runType: "PILOT",
   kbSizes: [30],
   techniques: ["PROMPT_ENGINEERING"],
-  scenarioIds: "scenario_001",
+  scenarioIds: ["scenario_001"],
   notes: "",
+};
+
+const defaultScenarioFilters: ScenarioPickerFilters = {
+  category: "",
+  inputType: "",
+  structure: "",
+  search: "",
 };
 
 function buildRunFilterQuery(filters: RunFilters): string {
@@ -83,21 +106,71 @@ function statusTone(status: RunStatus): string {
   return "tone-neutral";
 }
 
+function scenarioStructureLabel(scenario: ScenarioSummary): string {
+  return scenario.isMultiTurn
+    ? `Multi-turn (${scenario.turnCount} turns)`
+    : "Single-turn";
+}
+
+function shuffleScenarioIds(scenarios: ScenarioSummary[], count: number): string[] {
+  return scenarios
+    .map((scenario) => ({ id: scenario.id, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .slice(0, count)
+    .map((scenario) => scenario.id)
+    .sort();
+}
+
 export default function ExperimentsPage() {
   const [runs, setRuns] = useState<ExperimentRunSummary[]>([]);
+  const [scenarios, setScenarios] = useState<ScenarioSummary[]>([]);
   const [filters, setFilters] = useState<RunFilters>({
     runType: "",
     status: "",
     isFinalAnalysis: "",
   });
+  const [scenarioFilters, setScenarioFilters] = useState<ScenarioPickerFilters>(
+    defaultScenarioFilters,
+  );
   const [form, setForm] = useState<RunForm>(defaultForm);
   const [isLoadingRuns, setIsLoadingRuns] = useState(true);
+  const [isLoadingScenarios, setIsLoadingScenarios] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const runQuery = useMemo(() => buildRunFilterQuery(filters), [filters]);
   const officialMode = form.runType === "OFFICIAL";
+  const filteredScenarios = useMemo(() => {
+    const search = scenarioFilters.search.trim().toLowerCase();
+
+    return scenarios.filter((scenario) => {
+      if (scenarioFilters.category && scenario.category !== scenarioFilters.category) {
+        return false;
+      }
+
+      if (scenarioFilters.inputType && scenario.inputType !== scenarioFilters.inputType) {
+        return false;
+      }
+
+      if (scenarioFilters.structure === "single" && scenario.isMultiTurn) {
+        return false;
+      }
+
+      if (scenarioFilters.structure === "multi" && !scenario.isMultiTurn) {
+        return false;
+      }
+
+      if (!search) {
+        return true;
+      }
+
+      return (
+        scenario.id.toLowerCase().includes(search) ||
+        scenario.firstUserMessage.toLowerCase().includes(search)
+      );
+    });
+  }, [scenarioFilters, scenarios]);
 
   async function loadRuns(options: { clearError?: boolean } = {}): Promise<void> {
     setIsLoadingRuns(true);
@@ -121,6 +194,42 @@ export default function ExperimentsPage() {
     void loadRuns();
   }, [runQuery]);
 
+  useEffect(() => {
+    async function loadScenarios(): Promise<void> {
+      setIsLoadingScenarios(true);
+
+      try {
+        const data = await readApiData<ScenarioSummary[]>(
+          await fetch("/api/scenarios"),
+        );
+        setScenarios(data);
+      } catch (loadError) {
+        setError(
+          loadError instanceof Error
+            ? loadError.message
+            : "Failed to load scenarios.",
+        );
+      } finally {
+        setIsLoadingScenarios(false);
+      }
+    }
+
+    void loadScenarios();
+  }, []);
+
+  function setScenarioSelection(scenarioIds: string[]): void {
+    setForm({ ...form, scenarioIds });
+  }
+
+  function toggleScenarioSelection(scenarioId: string): void {
+    setScenarioSelection(toggleArrayValue(form.scenarioIds, scenarioId).sort());
+  }
+
+  function pickRandomScenarios(count: number): void {
+    const candidates = filteredScenarios.length > 0 ? filteredScenarios : scenarios;
+    setScenarioSelection(shuffleScenarioIds(candidates, count));
+  }
+
   async function submitRun(event: FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
     setError(null);
@@ -141,10 +250,10 @@ export default function ExperimentsPage() {
       return;
     }
 
-    const scenarioIds = form.scenarioIds
-      .split(",")
-      .map((item) => item.trim())
-      .filter(Boolean);
+    if (!officialMode && form.scenarioIds.length === 0) {
+      setError("Select at least one scenario for a pilot run.");
+      return;
+    }
 
     const body =
       form.runType === "OFFICIAL"
@@ -158,7 +267,7 @@ export default function ExperimentsPage() {
             runType: form.runType,
             kbSizes: form.kbSizes,
             techniques: form.techniques,
-            scenarioIds: scenarioIds.length > 0 ? scenarioIds : undefined,
+            scenarioIds: form.scenarioIds,
             notes: form.notes.trim() || null,
           };
 
@@ -221,7 +330,6 @@ export default function ExperimentsPage() {
     <AppShell>
       <section className="page-heading">
         <div>
-          <p className="eyebrow">Phase 10 UI</p>
           <h2>Experiments</h2>
           <p>
             Start controlled pilot runs, review run history, and choose the
@@ -309,17 +417,179 @@ export default function ExperimentsPage() {
             ))}
           </fieldset>
 
-          <label className="field">
-            <span>Scenario IDs for pilot runs</span>
-            <input
-              value={officialMode ? "All 60 official scenarios" : form.scenarioIds}
-              disabled={officialMode}
-              onChange={(event) =>
-                setForm({ ...form, scenarioIds: event.target.value })
-              }
-              placeholder="scenario_001, scenario_012"
-            />
-          </label>
+          {!officialMode && (
+            <section className="scenario-picker">
+              <div className="picker-heading">
+                <div>
+                  <h4>Scenarios</h4>
+                  <p>
+                    {form.scenarioIds.length} selected from {scenarios.length}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="table-button"
+                  onClick={() => setScenarioFilters(defaultScenarioFilters)}
+                >
+                  Reset filters
+                </button>
+              </div>
+
+              <div className="scenario-filter-grid">
+                <label className="field">
+                  <span>Category</span>
+                  <select
+                    value={scenarioFilters.category}
+                    onChange={(event) =>
+                      setScenarioFilters({
+                        ...scenarioFilters,
+                        category: event.target.value,
+                      })
+                    }
+                  >
+                    <option value="">All</option>
+                    {SCENARIO_CATEGORIES.map((category) => (
+                      <option key={category} value={category}>
+                        {category}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="field">
+                  <span>Input</span>
+                  <select
+                    value={scenarioFilters.inputType}
+                    onChange={(event) =>
+                      setScenarioFilters({
+                        ...scenarioFilters,
+                        inputType: event.target.value,
+                      })
+                    }
+                  >
+                    <option value="">All</option>
+                    {SCENARIO_INPUT_TYPES.map((inputType) => (
+                      <option key={inputType} value={inputType}>
+                        {inputType}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="field">
+                  <span>Type</span>
+                  <select
+                    value={scenarioFilters.structure}
+                    onChange={(event) =>
+                      setScenarioFilters({
+                        ...scenarioFilters,
+                        structure: event.target
+                          .value as ScenarioPickerFilters["structure"],
+                      })
+                    }
+                  >
+                    <option value="">All</option>
+                    <option value="single">Single-turn</option>
+                    <option value="multi">Multi-turn</option>
+                  </select>
+                </label>
+
+                <label className="field search-field">
+                  <span>Search</span>
+                  <input
+                    value={scenarioFilters.search}
+                    onChange={(event) =>
+                      setScenarioFilters({
+                        ...scenarioFilters,
+                        search: event.target.value,
+                      })
+                    }
+                    placeholder="scenario_001 or opening hours"
+                  />
+                </label>
+              </div>
+
+              <div className="picker-actions">
+                <button
+                  type="button"
+                  className="table-button"
+                  disabled={isLoadingScenarios || filteredScenarios.length === 0}
+                  onClick={() => pickRandomScenarios(1)}
+                >
+                  Pick 1 random
+                </button>
+                <button
+                  type="button"
+                  className="table-button"
+                  disabled={isLoadingScenarios || filteredScenarios.length === 0}
+                  onClick={() => pickRandomScenarios(5)}
+                >
+                  Pick 5 random
+                </button>
+                <button
+                  type="button"
+                  className="table-button"
+                  disabled={isLoadingScenarios || filteredScenarios.length === 0}
+                  onClick={() => pickRandomScenarios(10)}
+                >
+                  Pick 10 random
+                </button>
+                <button
+                  type="button"
+                  className="table-button"
+                  disabled={isLoadingScenarios || scenarios.length === 0}
+                  onClick={() => setScenarioSelection(scenarios.map((item) => item.id))}
+                >
+                  Select all
+                </button>
+                <button
+                  type="button"
+                  className="table-button"
+                  onClick={() => setScenarioSelection([])}
+                >
+                  Clear
+                </button>
+              </div>
+
+              <div className="selected-scenarios" aria-label="Selected scenarios">
+                {form.scenarioIds.length === 0 ? (
+                  <span>No scenarios selected</span>
+                ) : (
+                  form.scenarioIds.map((scenarioId) => (
+                    <span key={scenarioId} className="badge tone-accent">
+                      {scenarioId}
+                    </span>
+                  ))
+                )}
+              </div>
+
+              <div className="scenario-list">
+                {isLoadingScenarios ? (
+                  <div className="scenario-empty">Loading scenarios...</div>
+                ) : filteredScenarios.length === 0 ? (
+                  <div className="scenario-empty">No scenarios match the filters.</div>
+                ) : (
+                  filteredScenarios.map((scenario) => (
+                    <label key={scenario.id} className="scenario-row">
+                      <input
+                        type="checkbox"
+                        checked={form.scenarioIds.includes(scenario.id)}
+                        onChange={() => toggleScenarioSelection(scenario.id)}
+                      />
+                      <span>
+                        <strong>{scenario.id}</strong>
+                        <small>
+                          {scenario.category} / {scenario.inputType} /{" "}
+                          {scenarioStructureLabel(scenario)}
+                        </small>
+                        <em>{scenario.firstUserMessage}</em>
+                      </span>
+                    </label>
+                  ))
+                )}
+              </div>
+            </section>
+          )}
 
           <label className="field">
             <span>Notes</span>
