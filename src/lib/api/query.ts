@@ -239,6 +239,10 @@ export function parseExperimentResultFilters(
     kbSize: kbSize ? parseKbSize(kbSize) : undefined,
     scenarioCategory: getOptionalParam(searchParams, "scenarioCategory"),
     inputType: getOptionalParam(searchParams, "inputType"),
+    isMultiTurn: parseBoolean(
+      getOptionalParam(searchParams, "isMultiTurn"),
+      "isMultiTurn",
+    ),
     scenarioId: getOptionalParam(searchParams, "scenarioId"),
     hasError: parseBoolean(getOptionalParam(searchParams, "hasError"), "hasError"),
     limit,

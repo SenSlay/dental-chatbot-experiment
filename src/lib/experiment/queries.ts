@@ -35,6 +35,7 @@ function buildResultWhere(
     kbSize: filters.kbSize,
     scenarioCategory: filters.scenarioCategory,
     inputType: filters.inputType,
+    isMultiTurn: filters.isMultiTurn,
     scenarioId: filters.scenarioId,
     error:
       filters.hasError == null

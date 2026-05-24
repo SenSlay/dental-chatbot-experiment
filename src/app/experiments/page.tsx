@@ -408,7 +408,7 @@ export default function ExperimentsPage() {
                   <th>Status</th>
                   <th>Results</th>
                   <th>Created</th>
-                  <th>Action</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -441,17 +441,27 @@ export default function ExperimentsPage() {
                       <td>{run._count.results}</td>
                       <td>{formatDateTime(run.createdAt)}</td>
                       <td>
-                        <button
-                          className="table-button"
-                          disabled={
-                            run.runType !== "OFFICIAL" ||
-                            run.status !== "COMPLETED" ||
-                            run.isFinalAnalysis
-                          }
-                          onClick={() => void markFinalAnalysis(run.id)}
-                        >
-                          Mark final
-                        </button>
+                        <div className="table-actions">
+                          <a
+                            className="table-button"
+                            href={`/api/export?experimentRunId=${encodeURIComponent(
+                              run.id,
+                            )}`}
+                          >
+                            Export CSV
+                          </a>
+                          <button
+                            className="table-button"
+                            disabled={
+                              run.runType !== "OFFICIAL" ||
+                              run.status !== "COMPLETED" ||
+                              run.isFinalAnalysis
+                            }
+                            onClick={() => void markFinalAnalysis(run.id)}
+                          >
+                            Mark final
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   ))

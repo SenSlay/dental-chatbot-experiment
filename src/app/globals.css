@@ -438,6 +438,12 @@ tbody tr:last-child td {
   gap: 8px;
 }
 
+.table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .detail-row td {
   background: #fbfcfd;
 }

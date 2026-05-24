@@ -36,7 +36,7 @@ async function assertRejects(
 function validateQueryParsing(): void {
   const filters = parseExperimentResultFilters(
     new URLSearchParams(
-      "experimentRunId=run_1&technique=prompt_engineering&kbSize=30&scenarioCategory=general_inquiry&inputType=clean&scenarioId=scenario_001&hasError=false&limit=25&offset=5",
+      "experimentRunId=run_1&technique=prompt_engineering&kbSize=30&scenarioCategory=general_inquiry&inputType=clean&isMultiTurn=true&scenarioId=scenario_001&hasError=false&limit=25&offset=5",
     ),
     { includePagination: true },
   );
@@ -47,6 +47,7 @@ function validateQueryParsing(): void {
     "technique should parse",
   );
   assert(filters.kbSize === 30, "kbSize should parse");
+  assert(filters.isMultiTurn === true, "isMultiTurn should parse");
   assert(filters.hasError === false, "hasError should parse");
   assert(filters.limit === 25, "limit should parse");
   assert(filters.offset === 5, "offset should parse");

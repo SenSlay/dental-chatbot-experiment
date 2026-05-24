@@ -106,6 +106,7 @@ export type ListExperimentResultsFilters = {
   kbSize?: KbSize;
   scenarioCategory?: string;
   inputType?: string;
+  isMultiTurn?: boolean;
   scenarioId?: string;
   hasError?: boolean;
   limit?: number;

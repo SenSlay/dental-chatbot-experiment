@@ -31,6 +31,7 @@ type ResultFilters = {
   kbSize: "" | "30" | "100" | "300";
   scenarioCategory: string;
   inputType: string;
+  isMultiTurn: "" | "true" | "false";
   scenarioId: string;
   hasError: "" | "true" | "false";
 };
@@ -41,6 +42,7 @@ const defaultFilters: ResultFilters = {
   kbSize: "",
   scenarioCategory: "",
   inputType: "",
+  isMultiTurn: "",
   scenarioId: "",
   hasError: "",
 };
@@ -76,6 +78,10 @@ function tokenSummary(row: ExperimentResultRow): string {
   }
 
   return `${row.totalTokens} total`;
+}
+
+function scenarioStructureLabel(row: ExperimentResultRow): string {
+  return row.isMultiTurn ? `Multi-turn, turn ${row.turnNumber}` : "Single-turn";
 }
 
 export default function ResultsPage() {
@@ -253,6 +259,23 @@ export default function ResultsPage() {
           </label>
 
           <label className="field">
+            <span>Scenario type</span>
+            <select
+              value={filters.isMultiTurn}
+              onChange={(event) =>
+                updateFilter(
+                  "isMultiTurn",
+                  event.target.value as ResultFilters["isMultiTurn"],
+                )
+              }
+            >
+              <option value="">All</option>
+              <option value="false">Single-turn</option>
+              <option value="true">Multi-turn</option>
+            </select>
+          </label>
+
+          <label className="field">
             <span>Error</span>
             <select
               value={filters.hasError}
@@ -344,9 +367,8 @@ export default function ResultsPage() {
                         <div className="stacked-cell">
                           <strong>{row.scenarioId}</strong>
                           <span>{row.scenarioCategory}</span>
-                          <span>
-                            {row.inputType}, turn {row.turnNumber}
-                          </span>
+                          <span>{row.inputType}</span>
+                          <span>{scenarioStructureLabel(row)}</span>
                         </div>
                       </td>
                       <td>
@@ -385,6 +407,10 @@ export default function ResultsPage() {
                             <div>
                               <h4>Expected Behavior</h4>
                               <p>{row.expectedBehavior}</p>
+                            </div>
+                            <div>
+                              <h4>Scenario Structure</h4>
+                              <p>{scenarioStructureLabel(row)}</p>
                             </div>
                             <div>
                               <h4>Assistant Response</h4>
