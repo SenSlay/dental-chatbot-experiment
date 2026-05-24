@@ -36,6 +36,15 @@ type ResultFilters = {
   hasError: "" | "true" | "false";
 };
 
+type ResultGroup = {
+  id: string;
+  rows: ExperimentResultRow[];
+  firstRow: ExperimentResultRow;
+  totalTokens: number | null;
+  totalLatencyMs: number | null;
+  hasError: boolean;
+};
+
 const defaultFilters: ResultFilters = {
   experimentRunId: "",
   technique: "",
@@ -77,11 +86,58 @@ function tokenSummary(row: ExperimentResultRow): string {
     return "Not logged";
   }
 
-  return `${row.totalTokens} total`;
+  return `${row.totalTokens} tokens`;
 }
 
 function scenarioStructureLabel(row: ExperimentResultRow): string {
   return row.isMultiTurn ? `Multi-turn, turn ${row.turnNumber}` : "Single-turn";
+}
+
+function scenarioGroupStructureLabel(group: ResultGroup): string {
+  return group.firstRow.isMultiTurn
+    ? `Multi-turn (${group.rows.length} turns)`
+    : "Single-turn";
+}
+
+function groupResults(rows: ExperimentResultRow[]): ResultGroup[] {
+  const groups = new Map<string, ExperimentResultRow[]>();
+
+  rows.forEach((row) => {
+    const key = [
+      row.experimentRunId,
+      row.scenarioId,
+      row.technique,
+      row.kbSize,
+    ].join("|");
+    groups.set(key, [...(groups.get(key) ?? []), row]);
+  });
+
+  return [...groups.entries()].map(([id, groupRows]) => {
+    const sortedRows = [...groupRows].sort((a, b) => a.turnNumber - b.turnNumber);
+    const totalTokens = sortedRows.every((row) => row.totalTokens == null)
+      ? null
+      : sortedRows.reduce((sum, row) => sum + (row.totalTokens ?? 0), 0);
+    const totalLatencyMs = sortedRows.every((row) => row.latencyMs == null)
+      ? null
+      : sortedRows.reduce((sum, row) => sum + (row.latencyMs ?? 0), 0);
+
+    return {
+      id,
+      rows: sortedRows,
+      firstRow: sortedRows[0],
+      totalTokens,
+      totalLatencyMs,
+      hasError: sortedRows.some((row) => row.error),
+    };
+  });
+}
+
+function groupTokenSummary(group: ResultGroup): string {
+  if (group.totalTokens == null) {
+    return "Not logged";
+  }
+
+  return `${group.totalTokens} tokens`;
 }
 
 export default function ResultsPage() {
@@ -108,6 +164,7 @@ export default function ResultsPage() {
   }, [filters]);
   const canGoBack = offset > 0;
   const canGoForward = offset + LIMIT < results.total;
+  const resultGroups = useMemo(() => groupResults(results.items), [results.items]);
 
   async function loadRuns(): Promise<void> {
     try {
@@ -308,7 +365,9 @@ export default function ResultsPage() {
           <div>
             <h3>Generated Responses</h3>
             <p>
-              Showing {results.items.length} rows from offset {offset}.
+              Showing {resultGroups.length} scenario groups from{" "}
+              {results.items.length} response rows at offset {offset}. Tokens are
+              input plus output tokens reported by OpenAI.
             </p>
           </div>
           <div className="pagination">
@@ -346,13 +405,16 @@ export default function ResultsPage() {
                 <tr>
                   <td colSpan={6}>Loading results...</td>
                 </tr>
-              ) : results.items.length === 0 ? (
+              ) : resultGroups.length === 0 ? (
                 <tr>
                   <td colSpan={6}>No results found.</td>
                 </tr>
               ) : (
-                results.items.map((row) => (
-                  <Fragment key={row.id}>
+                resultGroups.map((group) => {
+                  const row = group.firstRow;
+
+                  return (
+                  <Fragment key={group.id}>
                     <tr>
                       <td>
                         <div className="stacked-cell">
@@ -368,7 +430,7 @@ export default function ResultsPage() {
                           <strong>{row.scenarioId}</strong>
                           <span>{row.scenarioCategory}</span>
                           <span>{row.inputType}</span>
-                          <span>{scenarioStructureLabel(row)}</span>
+                          <span>{scenarioGroupStructureLabel(group)}</span>
                         </div>
                       </td>
                       <td>
@@ -379,9 +441,11 @@ export default function ResultsPage() {
                       </td>
                       <td>
                         <div className="stacked-cell">
-                          <span>{row.latencyMs ?? "No"} ms</span>
-                          <span>{tokenSummary(row)}</span>
-                          {row.error && <span className="badge tone-danger">Error</span>}
+                          <span>{group.totalLatencyMs ?? "No"} ms</span>
+                          <span>Total: {groupTokenSummary(group)}</span>
+                          {group.hasError && (
+                            <span className="badge tone-danger">Error</span>
+                          )}
                         </div>
                       </td>
                       <td>{compactText(row.assistantResponse)}</td>
@@ -389,42 +453,64 @@ export default function ResultsPage() {
                         <button
                           className="table-button"
                           onClick={() =>
-                            setExpandedId(expandedId === row.id ? null : row.id)
+                            setExpandedId(expandedId === group.id ? null : group.id)
                           }
                         >
-                          {expandedId === row.id ? "Close" : "Open"}
+                          {expandedId === group.id ? "Close" : "Open"}
                         </button>
                       </td>
                     </tr>
-                    {expandedId === row.id && (
+                    {expandedId === group.id && (
                       <tr className="detail-row">
                         <td colSpan={6}>
                           <div className="result-detail">
                             <div>
-                              <h4>User Message</h4>
-                              <p>{row.userMessage}</p>
-                            </div>
-                            <div>
-                              <h4>Expected Behavior</h4>
-                              <p>{row.expectedBehavior}</p>
-                            </div>
-                            <div>
                               <h4>Scenario Structure</h4>
-                              <p>{scenarioStructureLabel(row)}</p>
+                              <p>{scenarioGroupStructureLabel(group)}</p>
                             </div>
                             <div>
-                              <h4>Assistant Response</h4>
-                              <p>{row.assistantResponse ?? "No response recorded."}</p>
+                              <h4>Technique</h4>
+                              <p>{formatTechnique(row.technique)}</p>
                             </div>
-                            {row.error && (
-                              <div>
-                                <h4>Error</h4>
-                                <p>{row.error}</p>
-                              </div>
-                            )}
-                            <div>
-                              <h4>Retrieved Context</h4>
-                              <pre>{prettyJson(row.retrievedContextJson)}</pre>
+                            <div className="turn-list">
+                              {group.rows.map((turnRow) => (
+                                <article key={turnRow.id} className="turn-card">
+                                  <div className="turn-card-header">
+                                    <strong>Turn {turnRow.turnNumber}</strong>
+                                    <span>
+                                      {turnRow.latencyMs ?? "No"} ms /{" "}
+                                      Total: {tokenSummary(turnRow)}
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <h4>User Message</h4>
+                                    <p>{turnRow.userMessage}</p>
+                                  </div>
+                                  <div>
+                                    <h4>Expected Behavior</h4>
+                                    <p>{turnRow.expectedBehavior}</p>
+                                  </div>
+                                  <div>
+                                    <h4>Assistant Response</h4>
+                                    <p>
+                                      {turnRow.assistantResponse ??
+                                        "No response recorded."}
+                                    </p>
+                                  </div>
+                                  {turnRow.error && (
+                                    <div>
+                                      <h4>Error</h4>
+                                      <p>{turnRow.error}</p>
+                                    </div>
+                                  )}
+                                  {turnRow.technique === "RAG" && (
+                                    <div>
+                                      <h4>Retrieved Context</h4>
+                                      <pre>{prettyJson(turnRow.retrievedContextJson)}</pre>
+                                    </div>
+                                  )}
+                                </article>
+                              ))}
                             </div>
                             <div className="detail-meta">
                               Logged {formatDateTime(row.createdAt)}
@@ -434,7 +520,8 @@ export default function ResultsPage() {
                       </tr>
                     )}
                   </Fragment>
-                ))
+                  );
+                })
               )}
             </tbody>
           </table>

@@ -588,6 +588,35 @@ tbody tr:last-child td {
   line-height: 1.5;
 }
 
+.turn-list {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: 12px;
+}
+
+.turn-card {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.turn-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.turn-card-header span {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
 .detail-meta {
   grid-column: 1 / -1;
   color: var(--muted);

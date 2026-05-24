@@ -4,6 +4,7 @@ import {
   parseRunRequestBody,
 } from "../src/lib/api/query";
 import { GET as getScenarios } from "../src/app/api/scenarios/route";
+import { getExportFilename } from "../src/app/api/export/route";
 import { errorResponse } from "../src/lib/api/json";
 import { markFinalAnalysisRun } from "../src/lib/experiment/queries";
 import { resultsToCsv } from "../src/lib/export/resultsToCsv";
@@ -234,6 +235,36 @@ async function validateScenarioApi(): Promise<void> {
   );
 }
 
+async function validateExportFilename(): Promise<void> {
+  const filename = getExportFilename(
+    { experimentRunId: "run_1" },
+    {
+      items: [
+        {
+          experimentRun: {
+            name: "Official Final Run, May 2026",
+          },
+        },
+      ],
+    } as never,
+  );
+
+  assert(
+    filename === "official-final-run-may-2026-run_1.csv",
+    "Per-run export should include sanitized run name and run ID",
+  );
+
+  const emptyFilename = getExportFilename(
+    { experimentRunId: "empty_run" },
+    { items: [] } as never,
+  );
+
+  assert(
+    emptyFilename === "experiment-empty_run.csv",
+    "Empty per-run export should include run ID",
+  );
+}
+
 async function main() {
   validateQueryParsing();
   validateCsvEscaping();
@@ -241,6 +272,7 @@ async function main() {
   await validateFinalAnalysisSelection();
   await validateErrorResponses();
   await validateScenarioApi();
+  await validateExportFilename();
   console.log("Validated API parsing, CSV export, and final-analysis rules");
 }
 
